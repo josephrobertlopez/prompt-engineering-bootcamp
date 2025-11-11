@@ -1,0 +1,28 @@
+# Documentation Project - Minimal .gitignore
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.log
+*.bak
+audit-inventory.txt
+
+# Environment files
+.env
+.env.local
+
+# Build artifacts (if markdown processors used)
+.cache/
+dist/
+build/

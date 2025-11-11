@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This research reveals a **critical divide between established patterns (proven over 10+ years) and experimental AI-assisted approaches (months old)**. Key findings: dotfiles like `.cursorrules` and `.github/copilot-instructions.md` are widespread industry standards, **"[redacted reference]" does not exist**, and terms like "Constitution/Specification/Planning patterns" are not recognized prompt engineering terminology. Workshop materials should focus on proven patterns while clearly labeling experimental approaches.
+This research reveals a **critical divide between established patterns (proven over 10+ years) and experimental AI-assisted approaches (months old)**. Key findings: dotfiles like `.cursorrules` and `.github/copilot-instructions.md` are widespread industry standards, **"VibeCodingThursday" does not exist**, and terms like "Constitution/Specification/Planning patterns" are not recognized prompt engineering terminology. Workshop materials should focus on proven patterns while clearly labeling experimental approaches.
 
 ## 1. Dotfiles and Configuration Management: What Actually Exists
 
@@ -95,9 +95,9 @@ Martin Fowler's analysis highlights concerns: verbose markdown files to review, 
 
 The most successful "spec-driven" practices are actually **decision-driven** and **design-driven** - capturing the why and architecture, not trying to make specs the source of truth for all code.
 
-## 4. [redacted reference] and Spec-Kit: Separating Fact from Fiction
+## 4. VibeCodingThursday and Spec-Kit: Separating Fact from Fiction
 
-### [redacted reference]: Does NOT Exist
+### VibeCodingThursday: Does NOT Exist
 
 **Zero evidence found.** Extensive searches across GitHub, Reddit, developer blogs, and general web returned no results. No events, communities, projects, or frameworks exist with this specific name. This should not be referenced in workshop materials as an established methodology.
 
@@ -197,7 +197,7 @@ The most comprehensive academic catalog (White et al., 2023) documents 16+ recog
 ### Do NOT Reference
 
 **Non-existent frameworks:**
-- [redacted reference] (zero evidence of existence)
+- VibeCodingThursday (zero evidence of existence)
 - .promptrc, .specrc as established patterns (only proposed, not real)
 - "Constitution/Specification/Planning patterns" as standard prompt engineering terminology
 
@@ -233,7 +233,7 @@ Every pattern discussed should include actual GitHub repository links, productio
 
 ### Distinguish Personal Frameworks
 
-Be explicit when something is "a personal methodology I've tested" versus "an industry-standard practice." [redacted reference] appeared to be a misremembered or hypothetical term. Spec-Kit, while real, is an official GitHub experiment, not a proven production standard. [GitHub](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) [Ainativedev](https://ainativedev.io/news/a-look-at-spec-kit-githubs-spec-driven-software-development-toolkit) This distinction helps participants make informed decisions about adoption risk.
+Be explicit when something is "a personal methodology I've tested" versus "an industry-standard practice." VibeCodingThursday appeared to be a misremembered or hypothetical term. Spec-Kit, while real, is an official GitHub experiment, not a proven production standard. [GitHub](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) [Ainativedev](https://ainativedev.io/news/a-look-at-spec-kit-githubs-spec-driven-software-development-toolkit) This distinction helps participants make informed decisions about adoption risk.
 
 ### The AI Assistant Context
 
@@ -266,7 +266,7 @@ Current AI-assisted development practices span from chaotic (vibe coding - accep
 
 ## Final Recommendations
 
-**Ground workshop materials in the three-tier framework**: clearly distinguish industry-standard practices (ADRs, RFCs, established prompt patterns) from emerging patterns (.cursorrules, Copilot instructions) and experimental approaches (Spec-Kit). Avoid referencing non-existent frameworks like [redacted reference] or using non-standard terminology like "Constitution Pattern."
+**Ground workshop materials in the three-tier framework**: clearly distinguish industry-standard practices (ADRs, RFCs, established prompt patterns) from emerging patterns (.cursorrules, Copilot instructions) and experimental approaches (Spec-Kit). Avoid referencing non-existent frameworks like VibeCodingThursday or using non-standard terminology like "Constitution Pattern."
 
 **Focus on proven patterns first**: Start with ADRs for decisions, RFC process for large changes, `.github/copilot-instructions.md` for team prompts, [GitHub](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) and established prompt engineering patterns (few-shot, Chain-of-Thought, Persona/Template patterns). These have track records and wide adoption.
 
