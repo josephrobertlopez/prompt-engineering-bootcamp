@@ -123,7 +123,6 @@ C) Tool-Assisted (Spec-Kit, Copilot Workspace)
 
 ### Removed from Materials
 
-❌ "VibeCodingThursday" - No evidence this exists
 ❌ "5 Modes is THE way" - Now presented as ONE example
 ❌ Implied maturity for experimental tools - Now properly tiered
 ❌ Non-standard pattern names - Now use research-backed terms
