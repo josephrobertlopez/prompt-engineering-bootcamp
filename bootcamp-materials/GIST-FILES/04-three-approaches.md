@@ -10,7 +10,7 @@ You can apply Few-shot, Chain-of-Thought, ReAct, Tree of Thoughts through multip
 
 | Approach | Maturity | Effort | Best For | Files |
 |----------|----------|--------|----------|-------|
-| **A: ADRs + Config** | 🟢 Tier 1 | Low | Most teams | docs/adr/, .cursorrules |
+| **A: ADRs + Config** | 🟢 Tier 1 | Low | Most teams | docs/adr/, .github/copilot-instructions.md |
 | **B: Structured Files** | 🟠 Tier 3 | Medium | Learning, complex tasks | 5-file workflow |
 | **C: Tool-Assisted** | 🟡🟠 Tier 2-3 | Low | IDE-committed teams | Platform-specific |
 
@@ -28,7 +28,7 @@ Lightweight decision docs + team configuration files
 
 **Files:**
 - `docs/adr/0001-spring-migration-standards.md` (decisions)
-- `.cursorrules` or `.github/copilot-instructions.md` (rules for AI)
+- `.github/copilot-instructions.md` or `.windsurfrules` (rules for AI)
 - Simple prompts referencing above
 
 ### Example Structure
@@ -59,27 +59,36 @@ Negative: Not using all Spring 3 features (can enhance later)
 - Option C: Full RFC 7807 (over-engineered for scope)
 ```
 
-**File: .cursorrules**
+**File: .github/copilot-instructions.md**
 ```markdown
-# Project: Spring Boot 3 Migration
+# GitHub Copilot Instructions - Spring Boot 3 Migration
 
-## Tech Stack
+## Project Context
+Migrating from Spring Boot 2.7 to Spring Boot 3.2.
+
+### Technology Stack
 - Spring Boot 3.2+
 - Java 17+
 - Jakarta EE
 
-## Migration Rules
-- javax.* → jakarta.*
-- @RequestMapping(method=X) → @XMapping
-- Constructor injection (no @Autowired)
+## Migration Standards
+
+### Package Transformations
+javax.* → jakarta.*
+
+### Annotation Modernization
+@RequestMapping(method=X) → @XMapping
+
+### Dependency Injection
+Constructor injection (no @Autowired)
 
 ## References
-See docs/adr/0001-spring-migration-standards.md for decisions
+- ADR: docs/adr/0001-spring-migration-standards.md
 ```
 
 **Prompt:**
 ```
-Following ADR 0001 and .cursorrules, migrate UserController.java to Spring 3.
+Following ADR 0001 and GitHub Copilot instructions, migrate UserController.java to Spring 3.
 ```
 
 ### Advantages

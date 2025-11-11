@@ -51,17 +51,25 @@
 
 ### Tool Configuration Files
 
-**`.cursorrules`** (Cursor AI)
-- Evidence: 3,000+ forks of awesome-cursorrules repository
-- Format: Plaintext/Markdown with natural language rules
-- Usage: Thousands of public repositories
-- Status: Community-driven standard
-
-**`.github/copilot-instructions.md`** (GitHub Copilot)
+**`.github/copilot-instructions.md`** (GitHub Copilot) ⭐ **RECOMMENDED**
 - Evidence: Official Microsoft/GitHub standard
 - Format: Markdown with YAML frontmatter for path-specific rules
-- Usage: Supported across VS Code, Visual Studio, JetBrains, Xcode
+- Usage: Supported across VS Code, Visual Studio, JetBrains, Neovim, Xcode
 - Status: Official documentation, auto-referenced by Copilot
+- **Primary choice for most teams** - cross-IDE compatibility
+
+**`.windsurfrules`** (Windsurf by Codeium)
+- Evidence: Official Windsurf/Codeium standard
+- Format: Plaintext/Markdown with natural language rules
+- Usage: Windsurf IDE (VSCode-based) with Cascade AI
+- Status: Growing adoption in 2024-2025
+- **Good choice for VSCode users wanting integrated AI**
+
+**Alternative: `.cursorrules`** (Cursor AI - IDE-specific)
+- Evidence: 3,000+ forks of awesome-cursorrules repository
+- Format: Plaintext/Markdown with natural language rules
+- Usage: Cursor IDE only (VSCode fork)
+- **Note:** IDE lock-in concern - prefer cross-IDE standards above
 
 **YAML Frontmatter Metadata**
 - Standard: Emerging practice for prompt versioning

@@ -1,0 +1,110 @@
+# Windsurf AI Rules - Spring Boot 3 Migration
+
+**IDE:** Windsurf (Codeium's VSCode-based AI IDE)
+**Format:** Project-specific AI instructions for Windsurf Cascade
+**Maturity:** 🟠 Tier 3 (New tool, growing adoption)
+
+---
+
+## Project: Spring Boot 3 Migration
+
+Migrating from Spring Boot 2.7 → 3.2
+
+### Tech Stack
+- Spring Boot 3.2.x
+- Java 17+
+- Jakarta EE
+- Maven
+
+---
+
+## Migration Rules
+
+### 1. Package Namespace Updates
+
+javax → jakarta transformations:
+
+```java
+// Transform these imports
+javax.validation.* → jakarta.validation.*
+javax.servlet.* → jakarta.servlet.*
+javax.persistence.* → jakarta.persistence.*
+```
+
+### 2. Annotation Modernization
+
+@RequestMapping → Specific HTTP method annotations:
+
+```java
+// Replace verbose annotations
+@RequestMapping(method=GET) → @GetMapping
+@RequestMapping(method=POST) → @PostMapping
+@RequestMapping(method=PUT) → @PutMapping
+@RequestMapping(method=DELETE) → @DeleteMapping
+```
+
+### 3. Dependency Injection Pattern
+
+Constructor injection only (no field injection):
+
+```java
+// Use this pattern
+@RequiredArgsConstructor
+public class UserController {
+    private final UserService userService;
+}
+
+// NOT this
+@Autowired
+private UserService userService;
+```
+
+---
+
+## Quality Requirements
+
+### Must Preserve
+- All API endpoints (same URLs, same contracts)
+- All business logic (exact behavior)
+- All existing tests (must pass without changes)
+
+### Must Fix
+- No javax.* imports allowed
+- No @Deprecated warnings
+- No field injection with @Autowired
+
+### Must Compile
+- Spring Boot 3.2.x clean compilation
+- Java 17+ compatibility
+- All tests green
+
+---
+
+## Exception Handling
+
+**Keep current pattern** - ResponseEntity-based:
+
+```java
+try {
+    return ResponseEntity.ok(result);
+} catch (IllegalArgumentException e) {
+    return ResponseEntity.badRequest().build();
+}
+```
+
+Do NOT change to ProblemDetail (future enhancement).
+
+---
+
+## Migration Phase Order
+
+1. **Imports first** - javax → jakarta, verify mvn compile
+2. **Annotations second** - @RequestMapping → @GetMapping etc
+3. **Injection third** - Verify @RequiredArgsConstructor pattern
+
+---
+
+## References
+
+- ADR: docs/adr/0001-spring-migration-standards.md
+- Spring 3.2 Guide: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.2-Migration-Guide
