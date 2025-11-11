@@ -18,7 +18,7 @@ Structure all development work using these 5 sequential modes:
 **Mode 4: ABCD Clarification** - Decision points with options  
 **Mode 5: Implementation** - Synthesized solution generation
 
-See `.cursorrules` for detailed templates.
+See `.github/copilot-instructions.md` or `.windsurfrules` for detailed templates.
 
 ### 2. Spec-Driven Artifacts
 
@@ -58,7 +58,8 @@ project-root/
 │       ├── file-2-planning.md
 │       ├── file-3-abcd.md
 │       └── file-4-implementation.md
-├── .cursorrules          # Cursor AI config
+├── .github/copilot-instructions.md  # GitHub Copilot config (recommended)
+├── .windsurfrules        # Windsurf IDE config
 ├── .aidigestrc           # Universal AI config (this file)
 └── [your code]
 ```

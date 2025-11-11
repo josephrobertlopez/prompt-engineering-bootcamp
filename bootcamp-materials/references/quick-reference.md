@@ -145,11 +145,11 @@ Generate code
 ### Team Workflow
 → **Config + Tool**
 ```
-.cursorrules + Copilot
+.github/copilot-instructions.md + Copilot
 ```
 - Time: 1 hr setup, 5 min daily
-- Files: 1 (.cursorrules)
-- Maturity: 🟡 Tier 2
+- Files: 1 (.github/copilot-instructions.md)
+- Maturity: 🟡 Tier 2 (cross-IDE)
 
 ---
 
@@ -376,8 +376,9 @@ Evidence: Win log shows consistent 30-40% time reduction
 
 **Industry Standards:**
 - ADRs: github.com/adr
-- .cursorrules: github.com/PatrickJS/awesome-cursorrules
-- Copilot: docs.github.com/copilot
+- Copilot: docs.github.com/copilot (⭐ recommended)
+- Windsurf: codeium.com/windsurf
+- .cursorrules: github.com/PatrickJS/awesome-cursorrules (reference only)
 
 **Tools:**
 - Spec-Kit: github.com/github/spec-kit (🟠 Tier 3)
@@ -403,7 +404,7 @@ Evidence: Win log shows consistent 30-40% time reduction
 **Pick ONE:**
 
 - [ ] Try Persona + Few-shot on real task (15 min)
-- [ ] Create .cursorrules for project (30 min)
+- [ ] Create .github/copilot-instructions.md for project (30 min)
 - [ ] Write first ADR documenting decision (20 min)
 - [ ] Build prompt library folder (10 min)
 - [ ] Track one win in log (5 min)

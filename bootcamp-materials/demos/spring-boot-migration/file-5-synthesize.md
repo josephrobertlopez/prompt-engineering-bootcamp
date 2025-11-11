@@ -190,7 +190,7 @@ Generate complete UserController.java that:
 
 **Option A: Simple Prompt (Faster)**
 ```
-Context: .cursorrules file + ADR 0001
+Context: .github/copilot-instructions.md + ADR 0001
 Prompt: "Migrate this controller to Spring 3, follow the ADR"
 ```
 

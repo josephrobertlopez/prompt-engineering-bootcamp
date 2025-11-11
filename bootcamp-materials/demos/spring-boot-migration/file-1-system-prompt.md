@@ -1,7 +1,7 @@
 # System Prompt: Spring Boot 3 Migration Specialist
 
 **Pattern Applied:** Persona Pattern + Few-shot Pattern (foundational prompt engineering)
-**Maps to:** `.cursorrules`, `.github/copilot-instructions.md`, or team coding standards
+**Maps to:** `.github/copilot-instructions.md` (recommended), `.windsurfrules`, or team coding standards
 **Alternative:** This could be an ADR documenting migration standards
 
 ---
@@ -283,20 +283,30 @@ public class SecurityConfig {
 
 This system prompt could also be structured as:
 
-**Option A: .cursorrules file** (Cursor AI)
+**Option A: .github/copilot-instructions.md** ⭐ (GitHub Copilot - Recommended)
+```markdown
+# Team Coding Standards: Spring Boot 3
+Tech Stack: Spring Boot 3.2, Java 17, Jakarta EE
+[Include rules and examples above]
+```
+- Cross-IDE compatible (VS Code, Visual Studio, JetBrains, Xcode)
+
+**Option B: .windsurfrules** (Windsurf IDE)
 ```markdown
 # Project: Spring Boot 3 Migration
 Tech Stack: Spring Boot 3.2, Java 17, Jakarta EE
 [Include rules and examples above]
 ```
+- VSCode-based, growing adoption
 
-**Option B: .github/copilot-instructions.md** (GitHub Copilot)
+**Option C: .cursorrules file** (Cursor IDE)
 ```markdown
-# Team Coding Standards: Spring Boot 3
+# Project: Spring Boot 3 Migration
 [Include rules and examples above]
 ```
+- ⚠️ IDE lock-in concern
 
-**Option C: ADR** (Architecture Decision Records)
+**Option D: ADR** (Architecture Decision Records)
 ```markdown
 # ADR 0001: Spring Boot 3 Migration Standards
 Status: Accepted

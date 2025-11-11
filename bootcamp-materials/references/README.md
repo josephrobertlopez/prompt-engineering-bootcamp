@@ -16,7 +16,7 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 - White et al. (2023): "A Prompt Pattern Catalog" (arXiv 2302.11382)
 - Yao et al. (2022): "ReAct: Synergizing Reasoning and Acting"
 - Yao et al. (2023): "Tree of Thoughts"
-- Industry standards: ADRs (2011+), .cursorrules, GitHub Copilot docs
+- Industry standards: ADRs (2011+), GitHub Copilot (official), Windsurf
 
 ---
 
@@ -43,8 +43,9 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 - **Your action:** Adopt without hesitation
 
 ### 🟡 Tier 2: Emerging (1-3 years)
-- .cursorrules (3,000+ forks)
-- .github/copilot-instructions.md (official Microsoft standard)
+- .github/copilot-instructions.md ⭐ (official Microsoft standard, cross-IDE)
+- .windsurfrules (Windsurf IDE, growing adoption)
+- .cursorrules (Cursor IDE - reference only, IDE lock-in concern)
 - **Your action:** Adopt with monitoring
 
 ### 🟠 Tier 3: Experimental (months to 1-2 years)
@@ -77,7 +78,7 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 ### Option A: ADRs + Config Files ⭐ (Recommended)
 - **Maturity:** Tier 1 (10+ years proven)
 - **When:** Production teams, straightforward tasks
-- **Files:** `docs/adr/0001.md` + `.cursorrules`
+- **Files:** `docs/adr/0001.md` + `.github/copilot-instructions.md`
 
 ### Option B: Structured Files 📚 (This workshop's example)
 - **Maturity:** Tier 3 (experimental)
@@ -178,7 +179,7 @@ This gist is a quick reference. Full materials include:
 ## 📞 Questions?
 
 **Q: Is this the only way?**
-A: No! ADRs + .cursorrules is simpler and often better. This teaches patterns through one example.
+A: No! ADRs + .github/copilot-instructions.md is simpler and often better. This teaches patterns through one example.
 
 **Q: Do I need all the files?**
 A: No. Start with ADR + simple prompt. Add structure only when complexity demands it.

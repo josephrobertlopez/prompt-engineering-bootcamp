@@ -112,7 +112,7 @@ Following ADR 0001 and GitHub Copilot instructions, migrate UserController.java 
 ### Getting Started
 1. Create `docs/adr/` folder
 2. Write first ADR documenting standards
-3. Create `.cursorrules` with team conventions
+3. Create `.github/copilot-instructions.md` with team conventions (cross-IDE)
 4. Use AI with "follow ADR 000X"
 
 ---
@@ -340,7 +340,7 @@ spec-kit implement
 - Best of both: proven decisions, detailed execution when needed
 
 ### Hybrid 2: Config + Tool
-- Use .cursorrules for team standards (Tier 2)
+- Use .github/copilot-instructions.md for team standards (Tier 2, cross-IDE)
 - Use Copilot Workspace for generation (Tier 2)
 - Consistent standards across IDE workflow
 
@@ -356,9 +356,9 @@ spec-kit implement
 ## Real-World Examples
 
 ### Startup (3-5 engineers)
-**Approach:** ADRs + Cursor Composer
-**Why:** Fast moving, small team, okay with tool dependency
-**Files:** Lightweight ADRs, .cursorrules
+**Approach:** ADRs + GitHub Copilot
+**Why:** Fast moving, small team, cross-IDE flexibility
+**Files:** Lightweight ADRs, .github/copilot-instructions.md
 
 ### Enterprise (50+ engineers)
 **Approach:** ADRs + Config Files

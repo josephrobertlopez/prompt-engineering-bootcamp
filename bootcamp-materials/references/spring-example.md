@@ -68,7 +68,7 @@ private final UserService userService;
 
 **Pattern used:** Persona + Few-shot
 **Reusability:** 100% reusable across all Spring migrations
-**Alternative:** This could be .cursorrules file
+**Alternative:** This could be .github/copilot-instructions.md or ADR
 
 ---
 
@@ -429,7 +429,7 @@ Phase 2: Annotations
 Phase 3: Verification
 ```
 
-**File: .cursorrules**
+**File: .github/copilot-instructions.md**
 ```markdown
 # Spring Boot 3 Migration Rules
 - javax.* → jakarta.*
@@ -438,7 +438,7 @@ Phase 3: Verification
 
 **Prompt:**
 ```
-Following ADR 0001 and .cursorrules, migrate UserController.java
+Following ADR 0001 and .github/copilot-instructions.md, migrate UserController.java
 ```
 
 **Same patterns, simpler format!**
@@ -498,7 +498,7 @@ Following ADR 0001 and .cursorrules, migrate UserController.java
 4. Choose approach that fits your team
 
 **If this feels like overhead:**
-1. Use ADRs + .cursorrules (simpler)
+1. Use ADRs + .github/copilot-instructions.md (simpler, cross-IDE)
 2. Apply patterns implicitly (no explicit files)
 3. Reserve structured files for very complex tasks
 

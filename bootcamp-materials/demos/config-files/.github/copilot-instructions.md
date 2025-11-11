@@ -162,7 +162,8 @@ This file demonstrates:
 
 **Alternative formats:** This same content could be structured as:
 - ADR (Architecture Decision Record) in docs/adr/
-- .cursorrules file (Cursor IDE specific)
+- .windsurfrules (Windsurf IDE - VSCode-based, growing adoption)
+- .cursorrules file (Cursor IDE - ⚠️ IDE lock-in concern)
 - .aidigestrc file (Aider tool specific)
 
-**Choose format based on your team's tools and preferences.**
+**Recommended:** Use this .github/copilot-instructions.md format (cross-IDE compatible) or ADRs.
