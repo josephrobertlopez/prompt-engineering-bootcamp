@@ -1,74 +1,56 @@
 # Prompt Engineering Bootcamp
 
-**Industry-standard prompt engineering workshop materials**
+Industry-standard workshop materials for teaching prompt engineering to developers.
 
-Research-backed approach based on:
-- White et al. (2023): "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
-- Yao et al. (2022): "ReAct: Synergizing Reasoning and Acting in Language Models"
-- Yao et al. (2023): "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
-
----
-
-## 📚 Materials
-
-All workshop materials are in the **[bootcamp-materials/](./bootcamp-materials/)** directory.
-
-**Quick Start:**
-- [bootcamp-materials/README.md](./bootcamp-materials/README.md) - Full workshop overview
-- [bootcamp-materials/START-HERE.md](./bootcamp-materials/START-HERE.md) - Getting started guide
-- [bootcamp-materials/GIST-FILES/](./bootcamp-materials/GIST-FILES/) - Standalone reference files
+**Research-backed:**
+- White et al. (2023): "A Prompt Pattern Catalog"
+- Yao et al. (2022): "ReAct: Synergizing Reasoning and Acting"
+- Yao et al. (2023): "Tree of Thoughts"
 
 ---
 
-## 🟢🟡🟠 Three-Tier Maturity Framework
+## Quick Start
 
-This workshop teaches prompt engineering through a maturity lens:
+**All materials:** [bootcamp-materials/](./bootcamp-materials/)
 
-- **🟢 Tier 1 (10+ years):** ADRs, RFCs, Few-shot, Chain-of-Thought, Persona, Template patterns
-- **🟡 Tier 2 (1-3 years):** .cursorrules, .github/copilot-instructions.md
-- **🟠 Tier 3 (months-2 years):** GitHub Spec-Kit, structured file workflows
-
-**Key Philosophy:** Multiple approaches are valid. Choose based on team maturity and task complexity.
+**Start here:** [bootcamp-materials/README.md](./bootcamp-materials/README.md)
 
 ---
 
-## 📖 What's Included
+## What's Included
 
-### Session Guides
-- Session 1: Industry standards and foundational patterns
-- Session 2: Advanced patterns (ReAct, Tree of Thoughts)
-- PowerPoint slides for both sessions
+**Presentations** - Workshop slides + session guides (2x 90-minute sessions)
+- Session 1: Foundational patterns (Persona, Few-shot, Template, Chain-of-Thought)
+- Session 2: Advanced patterns (ReAct, Tree of Thoughts, Meta-prompting)
+- PDFs + PPTX included
 
-### Example Workflows
-- Spring Boot migration example (complete 5-file workflow)
-- Demonstrates all patterns in practice
-- Maps to production practices (ADRs, config files)
+**Demos** - Working examples
+- GitHub Copilot + Windsurf configuration files
+- Complete Spring Boot migration (5-file workflow)
 
-### Gist-Ready References
-7 standalone files (~2,200 lines) ready for GitHub Gist:
-- Tier framework overview
-- Foundational patterns (Persona, Few-shot, Template, Chain-of-Thought)
-- Advanced patterns (ReAct, Tree of Thoughts, Meta-prompting)
-- Three approaches comparison (ADRs vs Structured Files vs Tools)
-- Complete Spring Boot example
-- Quick reference card
+**References** - Learning materials
+- Tier 1/2/3 maturity framework
+- Pattern documentation (7 gist-ready files)
+- Quick reference cheat sheet
 
 ---
 
-## 🚀 Usage
+## Key Philosophy
 
-1. Read [bootcamp-materials/README.md](./bootcamp-materials/README.md) for complete overview
-2. Choose your approach based on team needs
-3. Use examples and templates as starting points
-4. Adapt to your context
+**Multiple approaches valid:**
+- 🟢 ADRs + config files (recommended for most teams)
+- 🟠 Structured files (good for learning)
+- 🟡 Tool-assisted (platform-specific)
 
----
-
-## 📄 License
-
-Open source - use freely for workshops, training, and team education.
+Choose based on team needs, not dogma.
 
 ---
 
-**Last Updated:** November 2025
+## License
+
+Open source - use freely for workshops and training.
+
+---
+
 **Repository:** https://github.com/josephrobertlopez/prompt-engineering-bootcamp
+**Last Updated:** November 2025
