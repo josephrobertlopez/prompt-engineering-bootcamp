@@ -24,7 +24,7 @@
 
 **Session 1 Recap:**
 - ✓ Learned foundational patterns: Few-shot, Chain-of-Thought, Persona, Template
-- ✓ Explored configuration standards: `.cursorrules`, `.github/copilot-instructions.md`
+- ✓ Explored configuration standards: `.github/copilot-instructions.md`, `.windsurfrules`
 - ✓ Compared decision documentation: ADRs vs structured prompts
 - ✓ Applied patterns through one example (5-file workflow)
 
@@ -93,7 +93,7 @@
 **Strategy A: ADR-Driven Workflow** (Industry Standard)
 ```
 Step 1: Write ADR documenting decision (WHY)
-Step 2: Reference ADR in .cursorrules (HOW)
+Step 2: Reference ADR in .github/copilot-instructions.md (HOW)
 Step 3: Use AI with config loaded
 Step 4: Validate output against ADR success criteria
 ```
@@ -873,7 +873,7 @@ Generate complete UserController.java that:
 
 **Option A: Simple Prompt (Faster)**
 ```
-Context: .cursorrules file + ADR 0001
+Context: .github/copilot-instructions.md + ADR 0001
 Prompt: "Migrate this controller to Spring 3, follow the ADR"
 ```
 
@@ -977,12 +977,12 @@ Advanced patterns (ReAct, Tree of Thoughts) map cleanly to production practices 
 ### When to Use Which Approach (5 min)
 
 **Simple Task (5-15 min effort):**
-- Use: `.cursorrules` + direct AI prompt
+- Use: `.github/copilot-instructions.md` + direct AI prompt
 - Skip: Execution plans, decision docs, structured files
 - Example: "Update one method to use @GetMapping"
 
 **Medium Task (30-60 min effort):**
-- Use: ADR for decisions + `.cursorrules` for rules
+- Use: ADR for decisions + `.github/copilot-instructions.md` for rules
 - Optional: Brief execution notes if complex ordering
 - Example: "Migrate one controller file"
 
@@ -1000,7 +1000,7 @@ Advanced patterns (ReAct, Tree of Thoughts) map cleanly to production practices 
 
 **This Workshop's Structured Files:**
 ```
-file-1-system-prompt.md  → .cursorrules, .github/copilot-instructions.md
+file-1-system-prompt.md  → .github/copilot-instructions.md, .windsurfrules
 file-2-task-spec.md      → GitHub issue, Jira ticket
 file-3-react-plan.md     → ADR implementation notes, runbook
 file-4-tree-decisions.md → ADR alternatives section

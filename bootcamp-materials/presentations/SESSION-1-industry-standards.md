@@ -11,7 +11,7 @@
 
 **Learning Objectives:**
 - Understand industry-standard prompt engineering patterns (Few-shot, Chain-of-Thought, Persona)
-- Learn configuration management standards (`.cursorrules`, `.github/copilot-instructions.md`)
+- Learn configuration management standards (`.github/copilot-instructions.md`, `.windsurfrules`)
 - Explore decision documentation approaches (ADRs, structured prompts)
 - Apply these standards through ONE practical workflow example (5-file pattern)
 - Recognize multiple valid approaches exist (ADRs, Spec-Kit, custom patterns)
@@ -67,14 +67,21 @@ Developer: "Still missing patterns... let me explain more..."
 **Tier 2: Emerging Standards (1-3 years, growing adoption)**
 
 **Configuration Management:**
-- **`.cursorrules`**: Plaintext/Markdown files in project root with AI instructions
-  - 3,000+ forks of awesome-cursorrules repository
-  - Contains: Tech stack, coding standards (DRY, KISS), framework guidelines
-
-- **`.github/copilot-instructions.md`**: Official Microsoft/GitHub standard
+- **`.github/copilot-instructions.md`** ⭐ (Recommended): Official Microsoft/GitHub standard
   - Supported across VS Code, Visual Studio, JetBrains, Xcode
   - Repository-wide instructions + path-specific instructions
   - Auto-referenced by GitHub Copilot
+  - Cross-IDE compatible
+
+- **`.windsurfrules`**: Windsurf IDE configuration (VSCode-based)
+  - Growing adoption in 2024-2025
+  - Similar format to Copilot instructions
+  - Windsurf-specific (IDE lock-in consideration)
+
+- **`.cursorrules`**: Cursor IDE configuration (community-driven)
+  - 3,000+ forks of awesome-cursorrules repository
+  - Contains: Tech stack, coding standards (DRY, KISS), framework guidelines
+  - Cursor-specific only (IDE lock-in concern)
 
 **Tier 3: Experimental (months to 1-2 years, unproven at scale)**
 
@@ -87,40 +94,46 @@ Developer: "Still missing patterns... let me explain more..."
 
 ---
 
-### Slide 3: Configuration Standards - `.cursorrules` & Copilot Instructions (3 min)
+### Slide 3: Configuration Standards - GitHub Copilot & Windsurf (3 min)
 
 **What They Are:**
 Natural language files telling AI tools how to work with your project
 
-**`.cursorrules` Example:**
+**`.github/copilot-instructions.md` Example** ⭐ (Cross-IDE, Recommended):
 ```markdown
-# Project: Spring Boot Migration Helper
+# Team Copilot Instructions
+
+## Spring Boot 3 Migration Standards
+
+When working with controllers:
+- Use jakarta.* imports (Spring 3+)
+- Use specific HTTP method annotations (@GetMapping, @PostMapping)
+- Follow REST conventions
+- Constructor injection (no @Autowired)
 
 ## Tech Stack
 - Spring Boot 3.2+
 - Java 17+
 - Jakarta EE (not javax)
 
-## Coding Standards
-- DRY, KISS, YAGNI principles
-- Constructor injection (no @Autowired)
-- Specific HTTP annotations (@GetMapping not @RequestMapping)
-
-## DO NOT
-- Use deprecated javax.* packages
-- Mix @Autowired with @RequiredArgsConstructor
+See docs/adr/ for architecture decisions.
 ```
 
-**`.github/copilot-instructions.md` Example:**
+**`.windsurfrules` Example** (Windsurf IDE):
 ```markdown
-# Team Copilot Instructions
+# Project: Spring Boot Migration Helper
 
-When working with controllers:
-- Use jakarta.* imports (Spring 3+)
-- Use specific HTTP method annotations
-- Follow REST conventions
+## Tech Stack
+- Spring Boot 3.2+, Java 17+, Jakarta EE
 
-See docs/adr/ for architecture decisions.
+## Standards
+- DRY, KISS, YAGNI
+- Constructor injection only
+- Specific HTTP annotations (@GetMapping not @RequestMapping)
+
+## Avoid
+- Deprecated javax.* packages
+- @Autowired with @RequiredArgsConstructor
 ```
 
 **Key Benefits:**
@@ -182,7 +195,7 @@ Success criteria:
 We'll apply industry standards through a practical workflow:
 
 ```
-File 1: System Prompt (maps to: .cursorrules, persona pattern)
+File 1: System Prompt (maps to: .github/copilot-instructions.md, persona pattern)
   └─ Reusable rules for ALL files
 
 File 2: Task Specification (maps to: template pattern, structured output)
@@ -228,7 +241,7 @@ Before starting, verify:
 5. Code generation prompt - applies Chain-of-Thought
 
 **Alternatives We Could Use Instead:**
-- Write ADRs in `docs/adr/` + use `.cursorrules` (simpler, production-proven)
+- Write ADRs in `docs/adr/` + use `.github/copilot-instructions.md` (simpler, production-proven)
 - Use Spec-Kit toolkit (more structured, experimental)
 - Custom pattern that fits your team
 
@@ -245,7 +258,7 @@ Before starting, verify:
 **Grounding in Standards:**
 - **Persona Pattern**: We're assigning AI the role of "Spring migration specialist"
 - **Few-shot Pattern**: We provide example transformations
-- **Maps to**: `.cursorrules` or `.github/copilot-instructions.md` in real projects
+- **Maps to**: `.github/copilot-instructions.md` (recommended) or `.windsurfrules` in real projects
 
 **Template:**
 ```markdown
@@ -299,8 +312,8 @@ private final UserService userService;
 
 This could also be structured as:
 - ADR 0001: Spring 3 Migration Standards
-- .cursorrules file in project root
-- .github/copilot-instructions.md
+- .github/copilot-instructions.md (recommended, cross-IDE)
+- .windsurfrules (Windsurf IDE)
 
 Choose the format that fits your team's workflow.
 ```
@@ -667,10 +680,11 @@ Generate Spring Boot 3.2 compatible code using this reasoning process:
 ## Alternative Generation Approaches
 
 Instead of this structured file, you could:
-- Load .cursorrules + paste code + say "migrate this" (simpler)
+- Load .github/copilot-instructions.md + paste code + say "migrate this" (simpler, recommended)
 - Use Spec-Kit CLI: `spec-kit implement --spec-id migration-001` (tool-assisted)
 - Write ADR, reference in code comment, use Copilot inline (IDE-native)
 - Use GitHub Copilot Workspace with task list (platform-native)
+- Use .windsurfrules in Windsurf IDE (IDE-specific)
 
 This example shows explicit Chain-of-Thought prompting - adapt to your tool and workflow.
 ```
@@ -757,14 +771,14 @@ git checkout feature/spring-boot-3-migration
 - ✅ **Template Pattern**: Structured task specification with checklists
 - ✅ **Chain-of-Thought**: Asked AI to show reasoning during generation
 - ✅ **Task Decomposition**: Broke work into logical phases
-- ✅ **Configuration Standards**: Saw how `.cursorrules` and Copilot instructions work
+- ✅ **Configuration Standards**: Saw how `.github/copilot-instructions.md` and `.windsurfrules` work
 - ✅ **Decision Documentation**: Compared ADR format vs structured prompts
 
 **Key Insight:**
 You experienced ONE way to combine these patterns. Many other valid approaches exist:
-- Write ADRs + use `.cursorrules` (simpler)
+- Write ADRs + use `.github/copilot-instructions.md` (simpler, recommended)
 - Use Spec-Kit toolkit (more structured)
-- Use IDE-native features (Copilot Workspace, Cursor Rules)
+- Use IDE-native features (Copilot Workspace, Windsurf)
 - Custom workflow that fits your team
 
 ---
@@ -774,7 +788,7 @@ You experienced ONE way to combine these patterns. Many other valid approaches e
 **Approach A: ADRs + Configuration Files** (Recommended Starting Point)
 - Maturity: 10+ years proven
 - Best for: Production teams, established workflows
-- Files: `docs/adr/`, `.cursorrules`, `.github/copilot-instructions.md`
+- Files: `docs/adr/`, `.github/copilot-instructions.md` (cross-IDE), `.windsurfrules` (Windsurf)
 - Effort: Low (lightweight markdown)
 - Adoption: Widely understood, easy to onboard
 
@@ -806,7 +820,7 @@ You experienced ONE way to combine these patterns. Many other valid approaches e
 ### Next Steps - Adapting to Your Workflow (3 min)
 
 **This Week:**
-1. **Try the simplest approach first**: Create `.cursorrules` or `.github/copilot-instructions.md`
+1. **Try the simplest approach first**: Create `.github/copilot-instructions.md` (cross-IDE) or `.windsurfrules` (Windsurf)
 2. **Experiment with one real task**: Apply patterns to actual work
 3. **Measure time saved**: Track before/after for performance reviews
 
@@ -822,7 +836,7 @@ You experienced ONE way to combine these patterns. Many other valid approaches e
 
 **For Performance Reviews:**
 - "Applied industry-standard prompt engineering (Few-shot, Chain-of-Thought)"
-- "Established team configuration standards (.cursorrules, Copilot instructions)"
+- "Established team configuration standards (GitHub Copilot instructions, Windsurf rules)"
 - "Saved X hours through reusable prompt patterns"
 - "Improved AI output consistency by Y%"
 
@@ -837,10 +851,10 @@ A: No single right way exists. ADRs + config files are simpler and proven. 5-fil
 A: It's experimental (14 months old as of Nov 2025). Wait for more production adoption evidence unless you're comfortable being early adopter.
 
 **Q: Do we need all 5 files every time?**
-A: No! For simple tasks, just use `.cursorrules` + AI. Use structured files for complex work where planning/decisions matter.
+A: No! For simple tasks, just use `.github/copilot-instructions.md` + AI. Use structured files for complex work where planning/decisions matter.
 
 **Q: Can we mix approaches?**
-A: Absolutely! Write ADRs for decisions, use `.cursorrules` for rules, add task decomposition files for complex work. Hybrid is common.
+A: Absolutely! Write ADRs for decisions, use `.github/copilot-instructions.md` for rules, add task decomposition files for complex work. Hybrid is common.
 
 **Q: What if AI doesn't follow our prompts?**
 A: Try: (1) More specific few-shot examples, (2) Breaking into smaller steps, (3) Chain-of-Thought to show reasoning, (4) Different AI model
@@ -864,13 +878,13 @@ By the end of this session, you will have created:
 ## Troubleshooting
 
 **Issue: This feels like a lot of overhead for a simple task**
-- Solution: It is! For simple tasks, use `.cursorrules` + direct AI prompting. Use structured files for complex work.
+- Solution: It is! For simple tasks, use `.github/copilot-instructions.md` + direct AI prompting. Use structured files for complex work.
 
 **Issue: Our team already uses ADRs. Do we need these files?**
 - Solution: No! Keep using ADRs. This workshop shows patterns - not a required workflow. ADRs + config files is a proven approach.
 
 **Issue: Which format should I actually use at work?**
-- Solution: Start with ADRs + `.cursorrules` (proven, simple). Experiment with structured files for complex tasks. Choose what works.
+- Solution: Start with ADRs + `.github/copilot-instructions.md` (proven, cross-IDE). Experiment with structured files for complex tasks. Choose what works.
 
 **Issue: AI output doesn't match the feature branch exactly**
 - Solution: Exact match isn't the goal. Focus on patterns (imports, annotations, injection). Different variable names or formatting is fine.
