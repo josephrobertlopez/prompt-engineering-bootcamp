@@ -240,7 +240,7 @@ Before starting, verify:
 
 **Goal:** Create reusable rules applying Persona and Few-shot patterns
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-1-system-prompt.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-1-system-prompt.md`
 
 **Grounding in Standards:**
 - **Persona Pattern**: We're assigning AI the role of "Spring migration specialist"
@@ -317,7 +317,7 @@ Choose the format that fits your team's workflow.
 
 **Goal:** Define specific file changes using Template pattern
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-2-task-spec.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-2-task-spec.md`
 
 **Grounding in Standards:**
 - **Template Pattern**: Structured output format for AI
@@ -390,7 +390,7 @@ Use the format your team prefers.
 
 **Goal:** Apply Task Decomposition pattern
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-3-execution-plan.md` (optional)
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-3-execution-plan.md` (optional)
 
 **Grounding in Standards:**
 - **Task Decomposition**: Break complex work into ordered steps
@@ -453,8 +453,8 @@ This example shows how task decomposition works - use if helpful, skip if overki
 **Goal:** Experience both ADR and structured decision formats
 
 **Create ONE of these:**
-- Option A: `bootcamp-materials/06-SPRING-WORKFLOW/adr-0001-exception-handling.md` (ADR format)
-- Option B: `bootcamp-materials/06-SPRING-WORKFLOW/file-4-decisions.md` (structured prompt format)
+- Option A: `bootcamp-materials/demos/spring-boot-migration/adr-0001-exception-handling.md` (ADR format)
+- Option B: `bootcamp-materials/demos/spring-boot-migration/file-4-decisions.md` (structured prompt format)
 
 **Grounding in Standards:**
 - **ADR Format**: Industry standard since 2011, widely adopted
@@ -554,7 +554,7 @@ Focus migration on framework upgrade, not feature enhancements. Minimizes risk a
 
 **Goal:** Apply Chain-of-Thought + Few-shot patterns to generate code
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-5-generate.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-5-generate.md`
 
 **Grounding in Standards:**
 - **Chain-of-Thought**: Ask AI to show reasoning steps

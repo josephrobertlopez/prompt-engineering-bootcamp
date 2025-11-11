@@ -173,7 +173,7 @@ Specification file (per controller):
 **Goal:** Create reusable Constitution file with Spring 2→3 migration rules
 
 **Instructions:**
-1. Create new file: `bootcamp-materials/06-SPRING-WORKFLOW/file-0-constitution.md`
+1. Create new file: `bootcamp-materials/demos/spring-boot-migration/file-0-constitution.md`
 2. Copy the template below
 3. Read each rule and understand what it does
 4. Save the file
@@ -227,7 +227,7 @@ Code must NOT:
 ```
 
 **Success Criteria:**
-- file-0-constitution.md exists in bootcamp-materials/06-SPRING-WORKFLOW/
+- file-0-constitution.md exists in bootcamp-materials/demos/spring-boot-migration/
 - File contains at least 5 package migration rules
 - File contains at least 4 annotation rules
 - File specifies Spring Boot 3.2+ as target
@@ -245,7 +245,7 @@ Code must NOT:
 **Instructions:**
 1. Open UserController.java from spring-migration-demo (main branch)
 2. Copy the entire class code
-3. Create new file: `bootcamp-materials/06-SPRING-WORKFLOW/file-1-specification.md`
+3. Create new file: `bootcamp-materials/demos/spring-boot-migration/file-1-specification.md`
 4. Fill in template below with UserController code
 
 **Example:**
@@ -280,7 +280,7 @@ Current implementation:
 ```
 
 **Success Criteria:**
-- file-1-specification.md exists in bootcamp-materials/06-SPRING-WORKFLOW/
+- file-1-specification.md exists in bootcamp-materials/demos/spring-boot-migration/
 - File includes current state description
 - File includes target state description
 - File includes complete UserController.java code from main branch

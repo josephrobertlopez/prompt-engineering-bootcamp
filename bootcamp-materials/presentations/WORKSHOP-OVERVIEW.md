@@ -30,7 +30,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 ### **SESSION 1: PROMPT FILES AND CONFIGURATION** (90 minutes)
 **Focus:** Create Constitution and Specification prompt files
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-1-prompt-files.md](../02-SESSION-GUIDES/SESSION-1-prompt-files.md)
+**File:** [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md)
 
 **Slides (20 min):**
 1. Recap - The 80/20 You Already Know (2 min)
@@ -66,7 +66,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 ### **SESSION 2: WORKFLOWS AND ORCHESTRATION** (90 minutes)
 **Focus:** Orchestrate all 5 prompt modes together
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-2-workflows.md](../02-SESSION-GUIDES/SESSION-2-workflows.md)
+**File:** [SESSION-2-workflows.md](../presentations/SESSION-2-workflows.md)
 
 **Slides (20 min):**
 1. Recap Session 1 (2 min)
@@ -223,8 +223,8 @@ If 5 developers each migrate 10 files:
 ## 📦 MATERIALS PROVIDED
 
 ### **Session Guides:**
-1. ✅ [SESSION-1-prompt-files.md](../02-SESSION-GUIDES/SESSION-1-prompt-files.md) - Prompt Files and Configuration
-2. ✅ [SESSION-2-workflows.md](../02-SESSION-GUIDES/SESSION-2-workflows.md) - Workflows and Orchestration
+1. ✅ [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md) - Prompt Files and Configuration
+2. ✅ [SESSION-2-workflows.md](../presentations/SESSION-2-workflows.md) - Workflows and Orchestration
 
 ### **Reference Materials:**
 3. ✅ [COMPLETE-DEVELOPMENT-FRAMEWORK.md](computer:///mnt/user-data/outputs/COMPLETE-DEVELOPMENT-FRAMEWORK.md) (5,200 words)
@@ -502,7 +502,7 @@ Team has:
 6. **Measurable ROI** - Track time savings for PA
 
 **Start Session 1:**
-- [SESSION-1-prompt-files.md](../02-SESSION-GUIDES/SESSION-1-prompt-files.md) - Create your first prompt files
+- [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md) - Create your first prompt files
 - Your team will thank you
 
 **Let's get that 3-5x productivity gain.** 🚀

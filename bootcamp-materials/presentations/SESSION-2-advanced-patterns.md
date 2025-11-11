@@ -227,7 +227,7 @@ RATIONALE: Migration focus, minimize risk, can enhance later
 
 **Goal:** Apply ReAct pattern to structure migration phases
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-3-react-plan.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-3-react-plan.md`
 
 **Grounding:**
 - **Pattern:** ReAct (Yao et al., 2022)
@@ -408,7 +408,7 @@ Execute in this order:
 
 **Goal:** Apply Tree of Thoughts pattern to evaluate alternatives
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-4-tree-decisions.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-4-tree-decisions.md`
 
 **Grounding:**
 - **Pattern:** Tree of Thoughts (Yao et al., 2023)
@@ -679,7 +679,7 @@ This entire file could be written as two ADRs:
 
 **Goal:** Synthesize all patterns into final generation prompt
 
-**Create:** `bootcamp-materials/06-SPRING-WORKFLOW/file-5-synthesize.md`
+**Create:** `bootcamp-materials/demos/spring-boot-migration/file-5-synthesize.md`
 
 **Grounding:**
 - Combines: Few-shot + Chain-of-Thought + ReAct + Tree of Thoughts

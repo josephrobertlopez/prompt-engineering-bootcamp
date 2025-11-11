@@ -22,13 +22,13 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 
 ## 📁 Files in This Gist
 
-1. **00-README.md** (this file) - Overview and navigation
-2. **01-tier-framework.md** - 3-tier maturity framework for evaluating tools
-3. **02-foundational-patterns.md** - Few-shot, Chain-of-Thought, Persona, Template
-4. **03-advanced-patterns.md** - ReAct, Tree of Thoughts, Meta-prompting
-5. **04-three-approaches.md** - ADRs vs Structured Files vs Tool-Assisted
-6. **05-spring-example.md** - Complete working example (Spring Boot migration)
-7. **06-quick-reference.md** - Cheat sheet for daily use
+1. **[README.md](README.md)** (this file) - Overview and navigation
+2. **[tier-framework.md](tier-framework.md)** - 3-tier maturity framework for evaluating tools
+3. **[foundational-patterns.md](foundational-patterns.md)** - Few-shot, Chain-of-Thought, Persona, Template
+4. **[advanced-patterns.md](advanced-patterns.md)** - ReAct, Tree of Thoughts, Meta-prompting
+5. **[three-approaches.md](three-approaches.md)** - ADRs vs Structured Files vs Tool-Assisted
+6. **[spring-example.md](spring-example.md)** - Complete working example (Spring Boot migration)
+7. **[quick-reference.md](quick-reference.md)** - Cheat sheet for daily use
 
 ---
 
@@ -52,15 +52,15 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 - Structured file workflows
 - **Your action:** Experiment cautiously
 
-**See:** `01-tier-framework.md` for full details
+**See:** [tier-framework.md](tier-framework.md) for full details
 
 ---
 
 ## 🎓 Two Learning Paths
 
 ### Path A: Quick Start (30 min)
-1. Read `02-foundational-patterns.md` (10 min)
-2. Review `06-quick-reference.md` (5 min)
+1. Read [foundational-patterns.md](foundational-patterns.md) (10 min)
+2. Review [quick-reference.md](quick-reference.md) (5 min)
 3. Try one pattern on real work (15 min)
 
 ### Path B: Complete Workshop (3 hours)
@@ -89,7 +89,7 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 - **When:** Team committed to specific IDE
 - **Tools:** Spec-Kit, Copilot Workspace, Cursor Composer
 
-**See:** `04-three-approaches.md` for detailed comparison
+**See:** [three-approaches.md](three-approaches.md) for detailed comparison
 
 ---
 
@@ -101,14 +101,14 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 - **Template Pattern:** Structured output format
 - **Chain-of-Thought:** Show reasoning steps
 
-**See:** `02-foundational-patterns.md`
+**See:** [foundational-patterns.md](foundational-patterns.md)
 
 ### Advanced (Research-backed)
 - **ReAct (Yao 2022):** THINK → ACT → OBSERVE cycles
 - **Tree of Thoughts (Yao 2023):** Branch exploration for decisions
 - **Meta-prompting:** Orchestrate multiple patterns
 
-**See:** `03-advanced-patterns.md`
+**See:** [advanced-patterns.md](advanced-patterns.md)
 
 ---
 
@@ -160,12 +160,12 @@ This gist is a quick reference. Full materials include:
 ## 🎯 Next Steps
 
 **If you have 5 minutes:**
-- Read `01-tier-framework.md`
+- Read [tier-framework.md](tier-framework.md)
 - Understand how to evaluate tools/patterns
 
 **If you have 30 minutes:**
-- Read `02-foundational-patterns.md`
-- Read `06-quick-reference.md`
+- Read [foundational-patterns.md](foundational-patterns.md)
+- Read [quick-reference.md](quick-reference.md)
 - Try one pattern on real work
 
 **If you have 3 hours:**
@@ -210,5 +210,21 @@ A: Start solo. Measure time saved. Share win. Repeat. Let results drive adoption
 **Status:** Production-ready
 **License:** MIT
 
-**Start here:** `06-quick-reference.md` for immediate use
+**Start here:** [quick-reference.md](quick-reference.md) for immediate use
 **Deep dive:** Full workshop materials in repository
+
+---
+
+## References
+
+[1] White, J., Fu, Q., Hays, S., et al. (2023). "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT." arXiv:2302.11382 [cs.SE]. https://arxiv.org/abs/2302.11382
+
+[2] Yao, S., Zhao, J., Yu, D., et al. (2022). "ReAct: Synergizing Reasoning and Acting in Language Models." arXiv:2210.03629 [cs.CL]. https://arxiv.org/abs/2210.03629
+
+[3] Yao, S., Yu, D., Zhao, J., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models." arXiv:2305.10601 [cs.CL]. https://arxiv.org/abs/2305.10601
+
+[4] Nygard, M. (2011). "Documenting Architecture Decisions." https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+
+[5] GitHub Copilot Documentation. https://docs.github.com/en/copilot
+
+[6] ADR GitHub Organization. https://adr.github.io
