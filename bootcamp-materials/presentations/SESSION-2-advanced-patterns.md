@@ -40,6 +40,50 @@
 
 ---
 
+### Slide 1.5: From 5-File Pattern to spec/ Folder (5 min)
+
+**Session 1 Used: 5-File Numbered Pattern**
+
+```
+prompts/
+├── file-0-constitution.md    → Reusable rules
+├── file-1-specification.md   → File-specific targets
+├── file-2-planning.md        → Execution steps
+├── file-3-abcd.md           → Decisions (alternatives)
+└── file-4-implementation.md  → Synthesis
+```
+
+**Session 2 Uses: spec/ Folder Semantic Pattern**
+
+```
+spec/
+├── knowledge-base.md       → Domain knowledge + reusable rules
+├── specification.md        → Requirements + design decisions
+└── implementation-plan.md  → Execution phases + approach
+```
+
+**Mapping (Same Content, Different Organization):**
+
+| 5-File Pattern (Session 1) | spec/ Folder (Session 2) | Content |
+|----------------------------|--------------------------|---------|
+| file-0-constitution.md | spec/knowledge-base.md | Architecture decisions, constraints |
+| file-1-specification.md | spec/specification.md | Requirements section |
+| file-2-planning.md | spec/implementation-plan.md | Implementation phases |
+| file-3-abcd.md | spec/specification.md | Design Decisions section |
+| file-4-implementation.md | Execution | References all spec/ files |
+
+**Key Insight:** Same patterns (ReAct, Tree of Thoughts), different structure. This demonstrates patterns are **structure-agnostic**—choose what fits your team.
+
+**Why Show Both?**
+- 5-file: Good for linear progression, explicit phases
+- spec/ folder: Industry-standard naming, semantic clarity
+- ADRs: Even simpler (Session 1 alternative)
+- **All valid!** Today you'll see how ReAct/Tree of Thoughts work in spec/ folder format.
+
+**Reference:** See [spec-driven-mode.md](../references/spec-driven-mode.md), [planning-mode.md](../references/planning-mode.md), [abcd-mode.md](../references/abcd-mode.md) in references/ for templates.
+
+---
+
 ### Slide 2: Advanced Prompt Patterns Overview (4 min)
 
 **Pattern 1: ReAct (Reason + Act)**
@@ -225,18 +269,24 @@ RATIONALE: Migration focus, minimize risk, can enhance later
 
 ### Step 1: Create ReAct-Based Execution Plan (15 min)
 
-**Goal:** Apply ReAct pattern to structure migration phases
+**Goal:** Apply ReAct pattern to spec/implementation-plan.md
 
-**Reference:** [file-3-react-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-3-react-plan.md) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [spec/implementation-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/spec/implementation-plan.md) in spring-migration-demo (demo-day-2 branch)
 
 **Grounding:**
 - **Pattern:** ReAct (Yao et al., 2022)
 - **Alternative:** Could be section in ADR: "Implementation Strategy"
 - **When to use:** Complex tasks with dependencies
+- **See also:** [planning-mode.md](../references/planning-mode.md) for detailed template
+
+**File Location:** `spec/implementation-plan.md`
 
 **Template:**
 ```markdown
-# ReAct Execution Plan: UserController Migration
+# Implementation Plan: UserController Migration
+
+Location: spec/implementation-plan.md
+Created: [Date]
 
 ## About This Pattern
 
@@ -406,18 +456,28 @@ Execute in this order:
 
 ### Step 2: Document Decisions Using Tree of Thoughts (15 min)
 
-**Goal:** Apply Tree of Thoughts pattern to evaluate alternatives
+**Goal:** Apply Tree of Thoughts pattern to spec/specification.md Design Decisions section
 
-**Reference:** [file-4-tree-decisions.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-4-tree-decisions.md) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [spec/specification.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/spec/specification.md) in spring-migration-demo (demo-day-2 branch)
 
 **Grounding:**
 - **Pattern:** Tree of Thoughts (Yao et al., 2023)
 - **Alternative:** ADR "Alternatives Considered" section
 - **When to use:** Multiple valid approaches with tradeoffs
+- **See also:** [abcd-mode.md](../references/abcd-mode.md) for ABCD decision format
+
+**File Location:** `spec/specification.md` (Design Decisions section)
 
 **Template:**
 ```markdown
-# Tree of Thoughts: UserController Migration Decisions
+# Feature Specification: UserController Migration
+
+Location: spec/specification.md
+[...other sections...]
+
+## Design Decisions
+
+### Decision 1: Exception Handling Approach
 
 ## About This Pattern
 
@@ -677,28 +737,35 @@ This entire file could be written as two ADRs:
 
 ### Step 3: Generate Code with Complete Context (15 min)
 
-**Goal:** Synthesize all patterns into final generation prompt
+**Goal:** Load all spec/ files and generate code with complete context
 
-**Reference:** [file-5-synthesize.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-5-synthesize.md) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2/demos/session-2-advanced-patterns/spec) folder in spring-migration-demo (demo-day-2 branch)
 
 **Grounding:**
 - Combines: Few-shot + Chain-of-Thought + ReAct + Tree of Thoughts
-- **Meta-pattern:** This file orchestrates other patterns
+- **Meta-pattern:** spec/ files orchestrate patterns
+- **See also:** [spec-driven-mode.md](../references/spec-driven-mode.md) for complete workflow
 
-**Template:**
+**Files to Load:**
+```
+spec/
+├── knowledge-base.md       → Domain rules + constraints
+├── specification.md        → Requirements + design decisions
+└── implementation-plan.md  → Execution phases (ReAct)
+```
+
+**Generation Prompt:**
 ```markdown
-# Code Generation: Complete Pattern Synthesis
+# Code Generation: UserController Migration
 
-## Context Synthesis (Meta-prompting)
+## Context from spec/ Folder
 
-This generation prompt synthesizes multiple prompt engineering patterns:
-
-**From System Prompt (file-1):**
+**From spec/knowledge-base.md:**
 - ✅ Persona Pattern: AI role as Spring migration specialist
 - ✅ Few-shot Pattern: Before/after transformation examples
-- ✅ Quality standards and constraints
+- ✅ Architecture constraints and patterns
 
-**From Task Specification (file-2):**
+**From spec/specification.md:**
 - ✅ Template Pattern: Structured checklist of required changes
 - ✅ Success criteria with verification steps
 - ✅ All 7 API endpoints documented
@@ -902,34 +969,36 @@ All approaches work. Choose based on task complexity and team preference.
 
 ### Step 4: Execute Complete Workflow (15 min)
 
-**Goal:** Run the orchestrated workflow end-to-end
+**Goal:** Run the spec-driven workflow end-to-end
+
+**Reference:** [spec-driven-mode.md](../references/spec-driven-mode.md) for complete workflow guide
 
 **Instructions:**
-1. Load all context files into AI tool
-2. Generate code
+1. Load all spec/ files into AI tool
+2. Generate code using spec-driven approach
 3. Verify output against all success criteria
-4. Compare with feature branch
+4. Compare with demo branch
 
 **Execution Sequence:**
 
 ```
-Step 1: Load System Prompt
-Copy entire file-1-system-prompt.md
+Step 1: Load spec/knowledge-base.md
+Copy entire spec/knowledge-base.md
 Paste into AI tool
 [Wait for acknowledgment]
 
-Step 2: Load Task Specification
-Copy entire file-2-task-spec.md
+Step 2: Load spec/specification.md
+Copy entire spec/specification.md
 Paste into AI tool
 [Wait for acknowledgment]
 
-Step 3: Load ReAct Execution Plan
-Copy entire file-3-react-plan.md
+Step 3: Load spec/implementation-plan.md
+Copy entire spec/implementation-plan.md
 Paste into AI tool
 [AI should acknowledge phase structure]
 
-Step 4: Load Tree of Thoughts Decisions
-Copy entire file-4-tree-decisions.md
+Step 4: Request Code Generation
+"Using the context from spec/ folder above, generate the migrated UserController.java"
 Paste into AI tool
 [AI should acknowledge Branch A decisions]
 
