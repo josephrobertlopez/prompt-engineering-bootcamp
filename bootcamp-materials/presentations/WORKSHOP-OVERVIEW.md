@@ -30,7 +30,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 ### **SESSION 1: PROMPT FILES AND CONFIGURATION** (90 minutes)
 **Focus:** Create Constitution and Specification prompt files
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md)
+**File:** [SESSION-1-prompt-files.md](SESSION-1-prompt-files.md)
 
 **Slides (20 min):**
 1. Recap - The 80/20 You Already Know (2 min)
@@ -66,7 +66,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 ### **SESSION 2: WORKFLOWS AND ORCHESTRATION** (90 minutes)
 **Focus:** Orchestrate all 5 prompt modes together
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-2-workflows.md](../presentations/SESSION-2-workflows.md)
+**File:** [SESSION-2-workflows.md](SESSION-2-workflows.md)
 
 **Slides (20 min):**
 1. Recap Session 1 (2 min)
@@ -223,17 +223,20 @@ If 5 developers each migrate 10 files:
 ## 📦 MATERIALS PROVIDED
 
 ### **Session Guides:**
-1. ✅ [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md) - Prompt Files and Configuration
-2. ✅ [SESSION-2-workflows.md](../presentations/SESSION-2-workflows.md) - Workflows and Orchestration
+1. ✅ [SESSION-1-prompt-files.md](SESSION-1-prompt-files.md) - Prompt Files and Configuration
+2. ✅ [SESSION-2-workflows.md](SESSION-2-workflows.md) - Workflows and Orchestration
 
 ### **Reference Materials:**
-3. ✅ [COMPLETE-DEVELOPMENT-FRAMEWORK.md](computer:///mnt/user-data/outputs/COMPLETE-DEVELOPMENT-FRAMEWORK.md) (5,200 words)
-4. ✅ [QUICK-REFERENCE-CARD.md](computer:///mnt/user-data/outputs/QUICK-REFERENCE-CARD.md) (800 words)
-5. ✅ [FINAL-DELIVERY-SUMMARY.md](computer:///mnt/user-data/outputs/FINAL-DELIVERY-SUMMARY.md) (2,000 words)
+3. ✅ [foundational-patterns.md](../references/foundational-patterns.md) - Few-shot, Chain-of-Thought, Persona, Template patterns
+4. ✅ [advanced-patterns.md](../references/advanced-patterns.md) - ReAct, Tree of Thoughts, Meta-prompting
+5. ✅ [quick-reference.md](../references/quick-reference.md) - Quick reference card
+6. ✅ [spring-example.md](../references/spring-example.md) - Complete Spring migration example
+7. ✅ [three-approaches.md](../references/three-approaches.md) - Comparison of different approaches
 
-### **Spring Migration Examples:**
-6. ✅ spring-workflow/file-0-constitution.md (pre-built rules)
-7. ✅ Blank templates for all 5 modes
+### **Spring Migration Demo Repository:**
+8. ✅ [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) - Working Spring Boot migration code
+   - `demo-day-1` branch: Session 1 materials (foundational patterns)
+   - `demo-day-2` branch: Session 2 materials (advanced orchestration)
 
 ### **Repo:**
 - https://github.com/josephrobertlopez/spring-migration-demo
@@ -502,7 +505,7 @@ Team has:
 6. **Measurable ROI** - Track time savings for PA
 
 **Start Session 1:**
-- [SESSION-1-prompt-files.md](../presentations/SESSION-1-prompt-files.md) - Create your first prompt files
+- [SESSION-1-prompt-files.md](SESSION-1-prompt-files.md) - Create your first prompt files
 - Your team will thank you
 
 **Let's get that 3-5x productivity gain.** 🚀
