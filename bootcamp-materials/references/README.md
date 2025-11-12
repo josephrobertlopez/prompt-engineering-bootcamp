@@ -34,18 +34,13 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 
 For complex tasks requiring structured approach:
 
-**Setup:**
-- **[spec-folder-setup.md](spec-folder-setup.md)** - How to create spec/ folder structure
-
-**Mode Files:**
-- **[spec-driven-mode.md](spec-driven-mode.md)** - Overall workflow (read 3 docs, build)
-- **[planning-mode.md](planning-mode.md)** - Planning phase (create implementation plan)
-- **[abcd-mode.md](abcd-mode.md)** - Decision-making (present 4 options at ambiguities)
-
-**Templates:**
-- **[specification-template.md](specification-template.md)** - Feature spec format
-- **[knowledge-base-template.md](knowledge-base-template.md)** - Project context format
-- **[implementation-plan-template.md](implementation-plan-template.md)** - Planning format
+**Complete Guide:**
+- **[spec-folder-guide.md](spec-folder-guide.md)** - Unified guide covering:
+  - Part 1: Folder Setup (creating spec/ structure)
+  - Part 2: Spec-Driven Mode (read 3 docs, build phase-by-phase)
+  - Part 3: Planning Mode (create implementation-plan.md)
+  - Part 4: ABCD Clarification Mode (present 4 options at ambiguities)
+  - Appendix: Complete templates for all three spec/ files
 
 **When to use:** Complex migrations, multi-file refactoring, learning prompt patterns
 **Start simple:** ADRs (Tier 1) are often better. Use spec-driven for complex tasks only.

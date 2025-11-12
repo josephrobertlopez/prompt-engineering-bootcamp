@@ -88,7 +88,7 @@ spec/
 - ADRs: Even simpler (Session 1 alternative)
 - **All valid!** Today you'll see how ReAct/Tree of Thoughts work in spec/ folder format.
 
-**Reference:** See [spec-driven-mode.md](../references/spec-driven-mode.md), [planning-mode.md](../references/planning-mode.md), [abcd-mode.md](../references/abcd-mode.md) in references/ for templates.
+**Reference:** See [spec-folder-guide.md](../references/spec-folder-guide.md) in references/ for complete workflow guide and templates.
 
 ---
 
@@ -593,7 +593,7 @@ Execute in this order:
 - **Pattern:** Tree of Thoughts (Yao et al., 2023)
 - **Alternative:** ADR "Alternatives Considered" section
 - **When to use:** Multiple valid approaches with tradeoffs
-- **See also:** [abcd-mode.md](../references/abcd-mode.md) for ABCD decision format
+- **See also:** [spec-folder-guide.md](../references/spec-folder-guide.md) Part 4 for ABCD decision format
 
 **File Location:** `spec/specification.md` (Design Decisions section)
 
@@ -873,7 +873,7 @@ This entire file could be written as two ADRs:
 **Grounding:**
 - Combines: Few-shot + Chain-of-Thought + ReAct + Tree of Thoughts
 - **Meta-pattern:** spec/ files orchestrate patterns
-- **See also:** [spec-driven-mode.md](../references/spec-driven-mode.md) for complete workflow
+- **See also:** [spec-folder-guide.md](../references/spec-folder-guide.md) Part 2 for complete workflow
 
 **Files to Load:**
 ```
@@ -1100,7 +1100,7 @@ All approaches work. Choose based on task complexity and team preference.
 
 **Goal:** Run the spec-driven workflow end-to-end
 
-**Reference:** [spec-driven-mode.md](../references/spec-driven-mode.md) for complete workflow guide
+**Reference:** [spec-folder-guide.md](../references/spec-folder-guide.md) for complete workflow guide
 
 **Instructions:**
 1. Load all spec/ files into AI tool
