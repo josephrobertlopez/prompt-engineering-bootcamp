@@ -20,7 +20,7 @@
 
 ## PART 1: LEARNING CONCEPTS (0-30 minutes)
 
-### Slide 1: Prompt Orchestration Overview (7 min)
+### Slide 1: Prompt Orchestration Overview (6 min)
 
 **Session 1 Recap:**
 - ✓ Learned foundational patterns: Few-shot, Chain-of-Thought, Persona, Template
@@ -40,7 +40,15 @@
 
 ---
 
-### Slide 2: ReAct Pattern (Think→Act→Observe) (6 min)
+### 🔄 COGNITIVE BREAK (1 min)
+
+**Quick Check:** "Questions so far on today's goals?"
+
+*This micro-break resets attention before diving into advanced patterns*
+
+---
+
+### Slide 2: 5-File vs spec/ Folder Structure (5 min)
 
 **Session 1 Used: 5-File Numbered Pattern**
 
@@ -84,7 +92,15 @@ spec/
 
 ---
 
-### Slide 3: Tree of Thoughts (Alternatives Evaluation) (6 min)
+### 🔄 ACTIVE ENGAGEMENT (2 min)
+
+**Turn to your neighbor:** "Which tool do you plan to use today - Copilot, Claude, Cursor, or Windsurf?"
+
+*This active break increases retention through peer interaction*
+
+---
+
+### Slide 3a: ReAct + Tree of Thoughts Patterns (3 min)
 
 **Pattern 1: ReAct (Reason + Act)**
 - **Source:** Yao et al. (2022), widely adopted for AI agents
@@ -111,6 +127,10 @@ spec/
   ```
 - **Maps to:** How ADRs document "Alternatives Considered" section
 
+---
+
+### Slide 3b: Meta-prompting + Self-Consistency (4 min)
+
 **Pattern 3: Meta-prompting**
 - **Source:** Emerging pattern, prompt generates prompts
 - **Format:** Create reusable prompt templates from requirements
@@ -132,7 +152,7 @@ spec/
 
 ---
 
-### Slide 4: ADR vs Spec-Kit Comparison (6 min)
+### Slide 4: ADR vs Spec-Kit Comparison (5 min)
 
 **Strategy A: ADR-Driven Workflow** (Industry Standard)
 ```
@@ -170,7 +190,7 @@ Cursor Composer: Multi-file context → Iterative generation
 
 ---
 
-### Slide 5: Use Case Matrix - When to Use Each (5 min)
+### Slide 5: Use Case Matrix - When to Use Each (4 min)
 
 **Without ReAct: Linear, No Checkpoints**
 ```

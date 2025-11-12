@@ -20,7 +20,7 @@
 
 ## PART 1: LEARNING CONCEPTS (0-30 minutes)
 
-### Slide 1: The Problem - Ad-Hoc AI Prompting (8 min)
+### Slide 1: The Problem - Ad-Hoc AI Prompting (7 min)
 
 **Current State for Most Developers:**
 
@@ -43,7 +43,15 @@ Developer: "Still missing patterns... let me explain more..."
 
 ---
 
-### Slide 2: Prompting Templates & Tool Evaluation (7 min)
+### 🔄 ENGAGEMENT CHECK (1 min)
+
+**Show of hands:** "Who has used Architecture Decision Records (ADRs) before?"
+
+*This micro-break assesses baseline knowledge and resets attention*
+
+---
+
+### Slide 2a: Tier 1 Patterns (Few-shot, CoT, ADRs) (5 min)
 
 **Tier 1: Proven Patterns (10+ years, production-ready)**
 
@@ -63,6 +71,10 @@ Developer: "Still missing patterns... let me explain more..."
   - Used by: Google, Amazon, Uber, Rust Language, major open-source projects
   - Format: Structured proposals with alternatives considered
   - Key insight: Async collaboration, builds consensus
+
+---
+
+### Slide 2b: Tier 2 & 3 (copilot-instructions, Spec-Kit) (4 min)
 
 **Tier 2: Emerging Standards (1-3 years, growing adoption)**
 
@@ -94,7 +106,15 @@ Developer: "Still missing patterns... let me explain more..."
 
 ---
 
-### Slide 3: Ad-Hoc vs Structured Workflows (8 min)
+### 🔄 ACTIVE CHOICE (1 min)
+
+**Quick poll:** "Which tier interests you most - Tier 1 (ADRs), Tier 2 (config files), or Tier 3 (Spec-Kit)?"
+
+*This micro-break creates cognitive investment through choice*
+
+---
+
+### Slide 3: Ad-Hoc vs Structured Workflows (6 min)
 
 **What They Are:**
 Natural language files telling AI tools how to work with your project
@@ -143,7 +163,7 @@ See docs/adr/ for architecture decisions.
 
 ---
 
-### Slide 4: Evolution of ADRs to Specs (7 min)
+### Slide 4: Evolution of ADRs to Specs (6 min)
 
 **Option A: Architecture Decision Records (ADRs)** - Industry Standard
 
