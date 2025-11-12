@@ -30,6 +30,26 @@ Ground your prompt engineering in industry standards. This workshop teaches prov
 6. **[spring-example.md](spring-example.md)** - Complete working example (Spring Boot migration)
 7. **[quick-reference.md](quick-reference.md)** - Cheat sheet for daily use
 
+### 📁 Spec-Driven Workflow (Advanced)
+
+For complex tasks requiring structured approach:
+
+**Setup:**
+- **[spec-folder-setup.md](spec-folder-setup.md)** - How to create spec/ folder structure
+
+**Mode Files:**
+- **[spec-driven-mode.md](spec-driven-mode.md)** - Overall workflow (read 3 docs, build)
+- **[planning-mode.md](planning-mode.md)** - Planning phase (create implementation plan)
+- **[abcd-mode.md](abcd-mode.md)** - Decision-making (present 4 options at ambiguities)
+
+**Templates:**
+- **[specification-template.md](specification-template.md)** - Feature spec format
+- **[knowledge-base-template.md](knowledge-base-template.md)** - Project context format
+- **[implementation-plan-template.md](implementation-plan-template.md)** - Planning format
+
+**When to use:** Complex migrations, multi-file refactoring, learning prompt patterns
+**Start simple:** ADRs (Tier 1) are often better. Use spec-driven for complex tasks only.
+
 ---
 
 ## 🟢🟡🟠 Core Concept: Maturity Tiers

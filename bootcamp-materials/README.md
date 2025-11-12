@@ -21,6 +21,7 @@ Industry-standard workshop materials for teaching prompt engineering to develope
    - [tier-framework.md](references/tier-framework.md) - How to evaluate tools (Tier 1/2/3)
    - [foundational-patterns.md](references/foundational-patterns.md) - Persona, Few-shot, Template, Chain-of-Thought
    - [advanced-patterns.md](references/advanced-patterns.md) - ReAct, Tree of Thoughts, Meta-prompting
+   - [spec-driven-mode.md](references/spec-driven-mode.md) - Structured workflow for complex tasks
    - [three-approaches.md](references/three-approaches.md) - ADRs vs Files vs Tools
    - [quick-reference.md](references/quick-reference.md) - Cheat sheet
 
