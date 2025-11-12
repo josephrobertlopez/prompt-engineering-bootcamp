@@ -2,7 +2,7 @@
 ## Orchestrating Multiple Prompt Patterns for Complex Tasks
 
 **Duration:** 90 minutes
-**Format:** 15-min presentation + 60-min hands-on + 15-min review
+**Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
 **Prerequisites:**
 - Completed Session 1 (understand industry standards, basic patterns)
 - spring-migration-demo repository cloned
@@ -13,14 +13,14 @@
 - Learn advanced prompt patterns (ReAct, Tree of Thoughts, Meta-prompting)
 - Understand workflow orchestration strategies
 - Apply multi-step reasoning to complex tasks
-- Compare workflow approaches (ADR-driven, file-based, tool-assisted)
+- Compare spec-kit vs basic prompts through hands-on experimentation
 - Build complete end-to-end example using multiple patterns
 
 ---
 
-## PART 1: PRESENTATION (0-15 minutes)
+## PART 1: LEARNING CONCEPTS (0-30 minutes)
 
-### Slide 1: From Individual Patterns to Orchestrated Workflows (3 min)
+### Slide 1: Prompt Orchestration Overview (7 min)
 
 **Session 1 Recap:**
 - ✓ Learned foundational patterns: Few-shot, Chain-of-Thought, Persona, Template
@@ -40,7 +40,7 @@
 
 ---
 
-### Slide 1.5: From 5-File Pattern to spec/ Folder (5 min)
+### Slide 2: ReAct Pattern (Think→Act→Observe) (6 min)
 
 **Session 1 Used: 5-File Numbered Pattern**
 
@@ -84,7 +84,7 @@ spec/
 
 ---
 
-### Slide 2: Advanced Prompt Patterns Overview (4 min)
+### Slide 3: Tree of Thoughts (Alternatives Evaluation) (6 min)
 
 **Pattern 1: ReAct (Reason + Act)**
 - **Source:** Yao et al. (2022), widely adopted for AI agents
@@ -132,7 +132,7 @@ spec/
 
 ---
 
-### Slide 3: Workflow Orchestration Strategies (3 min)
+### Slide 4: ADR vs Spec-Kit Comparison (6 min)
 
 **Strategy A: ADR-Driven Workflow** (Industry Standard)
 ```
@@ -170,7 +170,7 @@ Cursor Composer: Multi-file context → Iterative generation
 
 ---
 
-### Slide 4: ReAct Pattern for Task Execution (3 min)
+### Slide 5: Use Case Matrix - When to Use Each (5 min)
 
 **Without ReAct: Linear, No Checkpoints**
 ```
@@ -251,27 +251,136 @@ RATIONALE: Migration focus, minimize risk, can enhance later
 
 ---
 
-## PART 2: HANDS-ON EXERCISE (15-75 minutes)
+## PART 2: SPRING BOOT DEMO (30-70 minutes)
 
-### Exercise Overview: Complete Workflow Example (3 min)
+### Prerequisites Check (Quick)
 
-**Scenario:** Complete UserController migration using advanced patterns
-
-**What You'll Do:**
-1. Create execution plan using **ReAct pattern**
-2. Document decisions using **Tree of Thoughts pattern**
-3. Generate code using **Chain-of-Thought + Few-shot**
-4. Compare: How would ADR-driven approach differ?
-
-**Reminder:** This is ONE workflow example. ADR + config files is simpler and equally valid.
+Before starting, verify:
+- [ ] spring-migration-demo repository cloned (demo-day-2 branch)
+- [ ] Can access spec/ folder in demos/session-2-advanced-patterns/
+- [ ] AI tool configured
 
 ---
 
-### Step 1: Create ReAct-Based Execution Plan (15 min)
+### Phase 1: Freestyle with Basic Prompt (30-50 min = 20 min)
 
-**Goal:** Apply ReAct pattern to spec/implementation-plan.md
+**Task:** End-to-end UserController migration using a simple prompt file
 
-**Reference:** [spec/implementation-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/spec/implementation-plan.md) in spring-migration-demo (demo-day-2 branch)
+**Your Challenge:** Create a single markdown file with migration instructions. Try to get complete, working code.
+
+**Required:**
+- javax.* → jakarta.* imports
+- Annotation modernization (@GetMapping, @PostMapping, etc.)
+- Constructor injection cleanup
+- All 7 endpoints preserved
+- Code compiles and passes tests
+
+**Observe:**
+- How detailed does your prompt need to be?
+- Does AI miss steps without explicit structure?
+- How do you handle decision points (e.g., exception handling strategy)?
+- Would this scale to 10 controllers? 50?
+
+**Instructor Support:** Available for hints
+
+---
+
+### Phase 2: Show Proper Spec-Kit Files (50-60 min = 10 min)
+
+**Instructor demonstrates:** Using spec/ folder orchestration from spring-migration-demo (demo-day-2 branch)
+
+**Files loaded:**
+1. spec/knowledge-base.md (domain context, architectural principles)
+2. spec/specification.md (requirements + design decisions with Tree of Thoughts)
+3. spec/implementation-plan.md (execution phases with ReAct pattern)
+
+**Walkthrough:**
+- **ReAct Pattern in action:** Think→Act→Observe cycles for each phase
+- **Tree of Thoughts in spec:** Decision points with alternatives evaluation
+- **Orchestration:** How files reference each other for complete context
+
+**Compare:**
+- Basic prompt: Single file, ad-hoc structure
+- Spec-kit: Semantic structure, explicit patterns, reusable across features
+
+---
+
+### Phase 3: Apply Spec-Kit Approach (60-70 min = 10 min)
+
+**Your Turn:** Load spec/ folder files and apply to SecurityConfig migration (or retry UserController with spec-kit)
+
+**Reference:** [demos/session-2-advanced-patterns/spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2/demos/session-2-advanced-patterns/spec) in spring-migration-demo (demo-day-2 branch)
+
+**Quick Validation:**
+- Code compiles?
+- All acceptance criteria met?
+- ReAct validation checkpoints passed?
+
+---
+
+## PART 3: REVIEW & DISCUSSION (70-90 minutes = 20 min)
+
+### Lessons Learned (10 min)
+
+**Discussion Questions:**
+- Basic prompt vs spec-kit: Which felt more structured?
+- When would spec-kit overhead be worth it?
+- How did ReAct pattern help (or not help)?
+- Did Tree of Thoughts clarify decision points?
+
+**Key Takeaways:**
+- Orchestration = combining multiple patterns cohesively
+- ReAct provides validation checkpoints (Think→Act→Observe)
+- Tree of Thoughts makes alternatives explicit
+- Spec-kit scales better but adds upfront overhead
+- Choose based on: task complexity, team size, reusability needs
+
+---
+
+### When to Use Which Approach (5 min)
+
+**Decision Matrix:**
+
+| Scenario | Recommended Approach | Why |
+|----------|---------------------|-----|
+| Single file change | Ad-hoc prompt | Low overhead |
+| 2-5 file migration | 5-file pattern (SESSION 1) | Structured, not heavy |
+| 10+ file migration | Spec-kit (SESSION 2) | Reusable, scales |
+| Team collaboration | ADRs + config files | Industry standard |
+| Complex decisions | Tree of Thoughts | Explicit alternatives |
+| Multi-phase task | ReAct pattern | Validation checkpoints |
+
+---
+
+### Q&A (5 min)
+
+Open floor for questions about:
+- ReAct, Tree of Thoughts, Meta-prompting patterns
+- Spec-kit vs ADR approaches
+- Orchestration strategies
+- Real-world applications
+
+---
+
+## WORKSHOP CONCLUSION
+
+**You Now Know:**
+- ✓ SESSION 1: Industry standards (ADRs, config files, foundational patterns)
+- ✓ SESSION 2: Advanced patterns (ReAct, Tree of Thoughts, orchestration)
+- ✓ Comparison: Freestyle vs templated vs spec-kit approaches
+- ✓ Decision framework: When to use which approach
+
+**Next Steps:**
+- Experiment with `.github/copilot-instructions.md` in your projects
+- Try ADRs for architectural decisions
+- Use spec-kit for complex, multi-file migrations
+- Adapt patterns to your team's workflow
+
+**Resources:**
+- [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) (demo-day-1, demo-day-2 branches)
+- [bootcamp-materials/references/](https://github.com/josephrobertlopez/prompt-engineering-bootcamp/tree/master/bootcamp-materials/references) (templates, guides)
+- ReAct paper: Yao et al. (2022) - https://arxiv.org/abs/2210.03629
+- Tree of Thoughts: Yao et al. (2023) - https://arxiv.org/abs/2305.10601
 
 **Grounding:**
 - **Pattern:** ReAct (Yao et al., 2022)

@@ -2,7 +2,7 @@
 ## From Ad-Hoc AI Prompting to Structured, Reusable Workflows
 
 **Duration:** 90 minutes
-**Format:** 15-min presentation + 60-min hands-on + 15-min review
+**Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
 **Prerequisites:**
 - AI tool installed (GitHub Copilot, Claude, Cursor, or Windsurf)
 - spring-migration-demo repository cloned
@@ -13,14 +13,14 @@
 - Understand industry-standard prompt engineering patterns (Few-shot, Chain-of-Thought, Persona)
 - Learn configuration management standards (`.github/copilot-instructions.md`, `.windsurfrules`)
 - Explore decision documentation approaches (ADRs, structured prompts)
-- Apply these standards through ONE practical workflow example (5-file pattern)
+- Compare freestyle vs templated approaches through hands-on experimentation
 - Recognize multiple valid approaches exist (ADRs, Spec-Kit, custom patterns)
 
 ---
 
-## PART 1: PRESENTATION (0-15 minutes)
+## PART 1: LEARNING CONCEPTS (0-30 minutes)
 
-### Slide 1: The Problem - Ad-Hoc AI Prompting (3 min)
+### Slide 1: The Problem - Ad-Hoc AI Prompting (8 min)
 
 **Current State for Most Developers:**
 
@@ -43,7 +43,7 @@ Developer: "Still missing patterns... let me explain more..."
 
 ---
 
-### Slide 2: Industry Standards Overview - The Three Tiers (4 min)
+### Slide 2: Prompting Templates & Tool Evaluation (7 min)
 
 **Tier 1: Proven Patterns (10+ years, production-ready)**
 
@@ -94,7 +94,7 @@ Developer: "Still missing patterns... let me explain more..."
 
 ---
 
-### Slide 3: Configuration Standards - GitHub Copilot & Windsurf (3 min)
+### Slide 3: Ad-Hoc vs Structured Workflows (8 min)
 
 **What They Are:**
 Natural language files telling AI tools how to work with your project
@@ -143,7 +143,7 @@ See docs/adr/ for architecture decisions.
 
 ---
 
-### Slide 4: Decision Documentation - ADRs vs Structured Prompts (3 min)
+### Slide 4: Evolution of ADRs to Specs (7 min)
 
 **Option A: Architecture Decision Records (ADRs)** - Industry Standard
 
@@ -217,43 +217,109 @@ File 5: Code Generation (maps to: few-shot + chain-of-thought)
 
 ---
 
-## PART 2: HANDS-ON EXERCISE (15-75 minutes)
+## PART 2: SPRING BOOT DEMO (30-70 minutes)
 
-### Prerequisites Check (2 min)
+### Prerequisites Check (Quick)
 
 Before starting, verify:
 - [ ] spring-migration-demo repository cloned
 - [ ] Can access UserController.java in src/main/java/com/example/demo/controller/
 - [ ] AI tool configured (Copilot/Claude/Cursor/Windsurf)
-- [ ] Understand this is ONE approach (not the only way)
 
 ---
 
-### Exercise Overview: Applying Standards to Spring Migration (3 min)
+### Phase 1: Freestyle Experimentation (30-50 min = 20 min)
 
-**Scenario:** Migrate UserController from Spring 2.7 patterns to Spring Boot 3.2
+**Task:** Migrate UserController from Spring Boot 2.7 to Spring Boot 3.2
 
-**What You'll Create:**
-1. System prompt file (reusable rules) - applies Persona + Few-shot patterns
-2. Task specification file (this file's goals) - applies Template pattern
-3. Simple execution plan (optional) - applies Task Decomposition
-4. Decision documentation (optional) - could use ADR instead
-5. Code generation prompt - applies Chain-of-Thought
+**Your Challenge:** Use your AI tool however you normally would. Try different prompting approaches.
 
-**Alternatives We Could Use Instead:**
-- Write ADRs in `docs/adr/` + use `.github/copilot-instructions.md` (simpler, production-proven)
-- Use Spec-Kit toolkit (more structured, experimental)
-- Custom pattern that fits your team
+**Required Changes:**
+- javax.* → jakarta.* imports
+- @RequestMapping → @GetMapping/@PostMapping/@PutMapping/@DeleteMapping
+- Remove @Autowired from constructor (implicit in Spring 3)
+- Preserve all 7 API endpoints
 
-**Why This Example:** Demonstrates how to combine multiple industry patterns into cohesive workflow
+**Instructor Support:** Ask for hints/help as needed
+
+**What to Observe:**
+- How many iterations did you need?
+- Did you get consistent results?
+- How would you share your approach with teammates?
+- Could you reuse this for the next controller?
 
 ---
 
-### Step 1: Create System Prompt File (15 min)
+### Phase 2: Show Guided Solution (50-60 min = 10 min)
 
-**Goal:** Create reusable rules applying Persona and Few-shot patterns
+**Instructor demonstrates:** Using 5-file template structure from spring-migration-demo (demo-day-1 branch)
 
-**Reference:** [file-1-system-prompt.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-1-system-prompt.md) in spring-migration-demo (demo-day-1 branch)
+**Files loaded:**
+1. file-1-system-prompt.md (reusable rules - Persona pattern)
+2. file-2-task-specification.md (this file's goals - Template pattern)
+3. file-3-execution-plan.md (ordered steps - Task Decomposition)
+4. file-4-decision-documentation.md (alternatives - ADR style)
+5. file-5-code-generation.md (synthesis - Chain-of-Thought)
+
+**Compare Results:**
+- Freestyle: How many iterations? Consistency?
+- Templated: First-try quality? Reusability?
+
+**Key Insight:** Templates aren't always needed, but when they help, they really help.
+
+---
+
+### Phase 3: Apply Templates Yourself (60-70 min = 10 min)
+
+**Your Turn:** Load the 5-file template structure and apply to SecurityConfig migration (or retry UserController with templates)
+
+**Reference:** [demos/session-1-industry-standards/prompts/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1/demos/session-1-industry-standards/prompts) in spring-migration-demo (demo-day-1 branch)
+
+**Quick Validation:**
+- Does code compile?
+- Are all imports updated?
+- No deprecated warnings?
+
+---
+
+## PART 3: REVIEW & DISCUSSION (70-90 minutes = 20 min)
+
+### Group Debrief (10 min)
+
+**Discussion Questions:**
+- What worked better: freestyle or templated?
+- When would you use templates? When wouldn't you?
+- How could you adapt this to your team's workflow?
+- What surprised you during the exercise?
+
+**Key Takeaways:**
+- Templates aren't always necessary (overhead vs value)
+- Industry standards (ADRs, config files) provide foundation
+- Choose approach based on task complexity and team needs
+- Patterns (Persona, Few-shot, Chain-of-Thought) work across any structure
+
+---
+
+### Q&A (8 min)
+
+Open floor for questions about:
+- Prompt engineering patterns
+- Configuration standards
+- Decision documentation approaches
+- Tool comparisons (Copilot, Claude, Cursor, Windsurf)
+
+---
+
+### Preview SESSION 2 (2 min)
+
+**Next Session:** Advanced Patterns & Orchestration
+- ReAct pattern (Think → Act → Observe cycles)
+- Tree of Thoughts (exploring alternatives)
+- Orchestrating multiple patterns for complex migrations
+- spec/ folder approach (semantic structure)
+- End-to-end code generation workflows
+
+**Homework (Optional):** Experiment with `.github/copilot-instructions.md` or `.windsurfrules` in your projects
 
 **Grounding in Standards:**
 - **Persona Pattern**: We're assigning AI the role of "Spring migration specialist"
