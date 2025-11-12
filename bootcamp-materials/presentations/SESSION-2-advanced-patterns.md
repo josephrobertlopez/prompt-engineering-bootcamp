@@ -227,7 +227,7 @@ RATIONALE: Migration focus, minimize risk, can enhance later
 
 **Goal:** Apply ReAct pattern to structure migration phases
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-3-react-plan.md`
+**Reference:** [file-3-react-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-3-react-plan.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding:**
 - **Pattern:** ReAct (Yao et al., 2022)
@@ -408,7 +408,7 @@ Execute in this order:
 
 **Goal:** Apply Tree of Thoughts pattern to evaluate alternatives
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-4-tree-decisions.md`
+**Reference:** [file-4-tree-decisions.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-4-tree-decisions.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding:**
 - **Pattern:** Tree of Thoughts (Yao et al., 2023)
@@ -679,7 +679,7 @@ This entire file could be written as two ADRs:
 
 **Goal:** Synthesize all patterns into final generation prompt
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-5-synthesize.md`
+**Reference:** [file-5-synthesize.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-5-synthesize.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding:**
 - Combines: Few-shot + Chain-of-Thought + ReAct + Tree of Thoughts

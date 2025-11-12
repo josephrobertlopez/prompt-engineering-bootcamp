@@ -253,7 +253,7 @@ Before starting, verify:
 
 **Goal:** Create reusable rules applying Persona and Few-shot patterns
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-1-system-prompt.md`
+**Reference:** [file-1-system-prompt.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-1-system-prompt.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding in Standards:**
 - **Persona Pattern**: We're assigning AI the role of "Spring migration specialist"
@@ -330,7 +330,7 @@ Choose the format that fits your team's workflow.
 
 **Goal:** Define specific file changes using Template pattern
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-2-task-spec.md`
+**Reference:** [file-2-task-spec.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-2-task-spec.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding in Standards:**
 - **Template Pattern**: Structured output format for AI
@@ -403,7 +403,7 @@ Use the format your team prefers.
 
 **Goal:** Apply Task Decomposition pattern
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-3-execution-plan.md` (optional)
+**Reference:** [file-3-react-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-3-react-plan.md) in spring-migration-demo (demo-day-1 branch) - optional
 
 **Grounding in Standards:**
 - **Task Decomposition**: Break complex work into ordered steps
@@ -465,9 +465,7 @@ This example shows how task decomposition works - use if helpful, skip if overki
 
 **Goal:** Experience both ADR and structured decision formats
 
-**Create ONE of these:**
-- Option A: `bootcamp-materials/demos/spring-boot-migration/adr-0001-exception-handling.md` (ADR format)
-- Option B: `bootcamp-materials/demos/spring-boot-migration/file-4-decisions.md` (structured prompt format)
+**Reference:** [file-4-tree-decisions.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-4-tree-decisions.md) in spring-migration-demo (demo-day-1 branch) - shows decision evaluation using Tree of Thoughts pattern
 
 **Grounding in Standards:**
 - **ADR Format**: Industry standard since 2011, widely adopted
@@ -567,7 +565,7 @@ Focus migration on framework upgrade, not feature enhancements. Minimizes risk a
 
 **Goal:** Apply Chain-of-Thought + Few-shot patterns to generate code
 
-**Create:** `bootcamp-materials/demos/spring-boot-migration/file-5-generate.md`
+**Reference:** [file-5-synthesize.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-5-synthesize.md) in spring-migration-demo (demo-day-1 branch)
 
 **Grounding in Standards:**
 - **Chain-of-Thought**: Ask AI to show reasoning steps
