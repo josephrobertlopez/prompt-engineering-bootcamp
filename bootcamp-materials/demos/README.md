@@ -8,8 +8,8 @@ All Spring Boot migration demos live in: **[spring-migration-demo](https://githu
 
 ### Session 1: Industry Standards (Day 1)
 
-**Branch:** `demo-day-1`
-**Link:** https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1
+**Location:** `demos/session-1-industry-standards/`
+**Link:** https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-1-industry-standards
 
 **Contains:**
 - ADR example (0001-migration-strategy.md)
@@ -21,12 +21,12 @@ All Spring Boot migration demos live in: **[spring-migration-demo](https://githu
 
 ### Session 2: Advanced Patterns (Day 2)
 
-**Branch:** `demo-day-2`
-**Link:** https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2
+**Location:** `demos/session-2-advanced-patterns/`
+**Link:** https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-2-advanced-patterns
 
 **Contains:**
-- 5-mode workflow (Constitution → Specification → Planning → ABCD → Implementation)
-- `.github/copilot-instructions.md` (Day 2 version)
+- spec/ folder workflow (knowledge-base.md, specification.md, implementation-plan.md)
+- `.github/copilot-instructions.md` (unified version)
 - Session 2 README with usage instructions
 
 **Patterns:** Meta-prompting, ReAct, Tree of Thoughts, Iterative refinement
@@ -36,7 +36,7 @@ All Spring Boot migration demos live in: **[spring-migration-demo](https://githu
 - **Grounded in real code:** Demos reference actual Java files, tests, and migrations
 - **Hands-on practice:** Workshop participants clone and work with actual codebase
 - **No duplication:** Single source of truth for Spring Boot migration demos
-- **Branch separation:** Day 1 and Day 2 materials cleanly separated
+- **Folder organization:** Day 1 and Day 2 materials in separate demo folders (main branch)
 
 ## 📂 What's Here
 
@@ -62,19 +62,19 @@ These are **generic examples** not tied to Spring Boot migration.
    cd spring-migration-demo
    ```
 
-2. **Day 1:** Checkout demo-day-1 branch
+2. **Day 1:** Navigate to session 1 materials
    ```bash
-   git checkout demo-day-1
    cd demos/session-1-industry-standards/
    cat README.md
    ```
 
-3. **Day 2:** Checkout demo-day-2 branch
+3. **Day 2:** Navigate to session 2 materials
    ```bash
-   git checkout demo-day-2
    cd demos/session-2-advanced-patterns/
    cat README.md
    ```
+
+**All materials are on the main branch** - no branch switching required!
 
 ## 📚 Related Materials
 
@@ -85,10 +85,10 @@ These are **generic examples** not tied to Spring Boot migration.
 
 ## 💡 Quick Links
 
-| Session | Branch | Materials | Live Code |
-|---------|--------|-----------|-----------|
-| Day 1 | [demo-day-1](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1) | Session 1 prompts + ADR | Spring Boot 3 |
-| Day 2 | [demo-day-2](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2) | Session 2 prompts | Spring Boot 3 |
+| Session | Location | Materials | Live Code |
+|---------|----------|-----------|-----------|
+| Day 1 | [session-1-industry-standards](https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-1-industry-standards) | 5-file workflow + ADR | Spring Boot 3 |
+| Day 2 | [session-2-advanced-patterns](https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-2-advanced-patterns) | spec/ folder workflow | Spring Boot 3 |
 
 ---
 
