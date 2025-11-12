@@ -36,13 +36,16 @@
 
 ## Alternative Teaching Approaches
 
-**Folder:** [extras/](extras/)
+**Folder:** [../alternatives/](../alternatives/)
 
-Contains alternative presentations using "5-mode framework" pedagogy:
-- `SESSION-1-prompt-files.md` - Mode 0-1 approach
-- `SESSION-2-workflows.md` - Mode 2-4 approach
+Contains complete alternative pedagogies for different audiences:
+- **5-mode-pedagogy/**: Numbered progression (Mode 0-5) for beginners
+  - `SESSION-1-prompt-files.md` - Constitution & Specification
+  - `SESSION-2-workflows.md` - Planning, ABCD, Implementation
 
-**Use when:** Teaching beginners who need more structured numbered progression.
+**Default:** Use main presentations (this directory) for professional developers.
+
+**See:** [alternatives/README.md](../alternatives/README.md) for pedagogy comparisons and when to use each.
 
 ---
 
