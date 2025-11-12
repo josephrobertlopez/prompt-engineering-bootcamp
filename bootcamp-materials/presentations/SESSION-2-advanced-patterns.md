@@ -256,7 +256,7 @@ RATIONALE: Migration focus, minimize risk, can enhance later
 ### Prerequisites Check (Quick)
 
 Before starting, verify:
-- [ ] spring-migration-demo repository cloned (demo-day-2 branch)
+- [ ] spring-migration-demo repository cloned (main branch)
 - [ ] Can access spec/ folder in demos/session-2-advanced-patterns/
 - [ ] AI tool configured
 
@@ -287,7 +287,7 @@ Before starting, verify:
 
 ### Phase 2: Show Proper Spec-Kit Files (50-60 min = 10 min)
 
-**Instructor demonstrates:** Using spec/ folder orchestration from spring-migration-demo (demo-day-2 branch)
+**Instructor demonstrates:** Using spec/ folder orchestration from spring-migration-demo (main branch)
 
 **Files loaded:**
 1. spec/knowledge-base.md (domain context, architectural principles)
@@ -309,7 +309,7 @@ Before starting, verify:
 
 **Your Turn:** Load spec/ folder files and apply to SecurityConfig migration (or retry UserController with spec-kit)
 
-**Reference:** [demos/session-2-advanced-patterns/spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2/demos/session-2-advanced-patterns/spec) in spring-migration-demo (demo-day-2 branch)
+**Reference:** [demos/session-2-advanced-patterns/spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-2-advanced-patterns/spec) in spring-migration-demo (main branch)
 
 **Quick Validation:**
 - Code compiles?
@@ -377,7 +377,7 @@ Open floor for questions about:
 - Adapt patterns to your team's workflow
 
 **Resources:**
-- [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) (demo-day-1, demo-day-2 branches)
+- [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) (demo-day-1, main branches)
 - [bootcamp-materials/references/](https://github.com/josephrobertlopez/prompt-engineering-bootcamp/tree/master/bootcamp-materials/references) (templates, guides)
 - ReAct paper: Yao et al. (2022) - https://arxiv.org/abs/2210.03629
 - Tree of Thoughts: Yao et al. (2023) - https://arxiv.org/abs/2305.10601
@@ -567,7 +567,7 @@ Execute in this order:
 
 **Goal:** Apply Tree of Thoughts pattern to spec/specification.md Design Decisions section
 
-**Reference:** [spec/specification.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/spec/specification.md) in spring-migration-demo (demo-day-2 branch)
+**Reference:** [spec/specification.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/spec/specification.md) in spring-migration-demo (main branch)
 
 **Grounding:**
 - **Pattern:** Tree of Thoughts (Yao et al., 2023)
@@ -848,7 +848,7 @@ This entire file could be written as two ADRs:
 
 **Goal:** Load all spec/ files and generate code with complete context
 
-**Reference:** [spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2/demos/session-2-advanced-patterns/spec) folder in spring-migration-demo (demo-day-2 branch)
+**Reference:** [spec/](https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-2-advanced-patterns/spec) folder in spring-migration-demo (main branch)
 
 **Grounding:**
 - Combines: Few-shot + Chain-of-Thought + ReAct + Tree of Thoughts

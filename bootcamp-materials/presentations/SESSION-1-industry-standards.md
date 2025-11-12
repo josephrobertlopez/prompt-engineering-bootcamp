@@ -252,7 +252,7 @@ Before starting, verify:
 
 ### Phase 2: Show Guided Solution (50-60 min = 10 min)
 
-**Instructor demonstrates:** Using 5-file template structure from spring-migration-demo (demo-day-1 branch)
+**Instructor demonstrates:** Using 5-file template structure from spring-migration-demo (main branch)
 
 **Files loaded:**
 1. file-1-system-prompt.md (reusable rules - Persona pattern)
@@ -273,7 +273,7 @@ Before starting, verify:
 
 **Your Turn:** Load the 5-file template structure and apply to SecurityConfig migration (or retry UserController with templates)
 
-**Reference:** [demos/session-1-industry-standards/prompts/](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1/demos/session-1-industry-standards/prompts) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [demos/session-1-industry-standards/prompts/](https://github.com/josephrobertlopez/spring-migration-demo/tree/main/demos/session-1-industry-standards/prompts) in spring-migration-demo (main branch)
 
 **Quick Validation:**
 - Does code compile?
@@ -396,7 +396,7 @@ Choose the format that fits your team's workflow.
 
 **Goal:** Define specific file changes using Template pattern
 
-**Reference:** [file-2-task-spec.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-2-task-spec.md) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [file-2-task-spec.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-1-industry-standards/prompts/file-2-task-spec.md) in spring-migration-demo (main branch)
 
 **Grounding in Standards:**
 - **Template Pattern**: Structured output format for AI
@@ -469,7 +469,7 @@ Use the format your team prefers.
 
 **Goal:** Apply Task Decomposition pattern
 
-**Reference:** [file-3-react-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-3-react-plan.md) in spring-migration-demo (demo-day-1 branch) - optional
+**Reference:** [file-3-react-plan.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-1-industry-standards/prompts/file-3-react-plan.md) in spring-migration-demo (main branch) - optional
 
 **Grounding in Standards:**
 - **Task Decomposition**: Break complex work into ordered steps
@@ -531,7 +531,7 @@ This example shows how task decomposition works - use if helpful, skip if overki
 
 **Goal:** Experience both ADR and structured decision formats
 
-**Reference:** [file-4-tree-decisions.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-4-tree-decisions.md) in spring-migration-demo (demo-day-1 branch) - shows decision evaluation using Tree of Thoughts pattern
+**Reference:** [file-4-tree-decisions.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-1-industry-standards/prompts/file-4-tree-decisions.md) in spring-migration-demo (main branch) - shows decision evaluation using Tree of Thoughts pattern
 
 **Grounding in Standards:**
 - **ADR Format**: Industry standard since 2011, widely adopted
@@ -631,7 +631,7 @@ Focus migration on framework upgrade, not feature enhancements. Minimizes risk a
 
 **Goal:** Apply Chain-of-Thought + Few-shot patterns to generate code
 
-**Reference:** [file-5-synthesize.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-1/demos/session-1-industry-standards/prompts/file-5-synthesize.md) in spring-migration-demo (demo-day-1 branch)
+**Reference:** [file-5-synthesize.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-1-industry-standards/prompts/file-5-synthesize.md) in spring-migration-demo (main branch)
 
 **Grounding in Standards:**
 - **Chain-of-Thought**: Ask AI to show reasoning steps
