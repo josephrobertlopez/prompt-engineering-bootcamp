@@ -20,13 +20,13 @@ Industry-standard workshop materials for teaching prompt engineering to develope
 ## What's Included
 
 **Presentations** - Workshop slides + session guides (2x 90-minute sessions)
-- Session 1: Foundational patterns (Persona, Few-shot, Template, Chain-of-Thought)
-- Session 2: Advanced patterns (ReAct, Tree of Thoughts, Meta-prompting)
-- PDFs + PPTX included
+- Session 1: Industry standards (ADRs, config files, foundational patterns)
+- Session 2: Advanced patterns (ReAct, Tree of Thoughts, orchestration)
+- Markdown format (GitHub-compatible)
 
 **Demos** - Working examples
 - GitHub Copilot + Windsurf configuration files
-- Complete Spring Boot migration (5-file workflow)
+- Complete Spring Boot migration: [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo)
 
 **References** - Learning materials
 - Tier 1/2/3 maturity framework
