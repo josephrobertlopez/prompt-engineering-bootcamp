@@ -8,7 +8,7 @@
 **Duration:** 90 minutes
 **Focus:** ADRs + Foundational prompt patterns (Persona, Few-shot, Template, Chain-of-Thought)
 
-**Demo repo branch:** [demo-day-1](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1)
+**Demo repo:** [main branch](https://github.com/josephrobertlopez/spring-migration-demo)
 
 **Learning Path:**
 1. Industry-standard decision documentation (ADRs)
@@ -24,7 +24,7 @@
 **Duration:** 90 minutes
 **Focus:** ReAct, Tree of Thoughts, Meta-prompting
 
-**Demo repo branch:** [demo-day-2](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2)
+**Demo repo:** [main branch](https://github.com/josephrobertlopez/spring-migration-demo)
 
 **Learning Path:**
 1. ReAct pattern (Reason → Act → Observe)
@@ -68,5 +68,7 @@ Contains alternative presentations using "5-mode framework" pedagogy:
 
 **For participants:**
 1. Clone: `git clone https://github.com/josephrobertlopez/spring-migration-demo.git`
-2. Day 1: `git checkout demo-day-1`
-3. Day 2: `git checkout demo-day-2`
+2. Day 1: `cd demos/session-1-industry-standards/`
+3. Day 2: `cd demos/session-2-advanced-patterns/`
+
+All materials are in the `main` branch - no branch switching required!

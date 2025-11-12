@@ -397,7 +397,7 @@ Open floor for questions about:
 - Adapt patterns to your team's workflow
 
 **Resources:**
-- [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) (demo-day-1, main branches)
+- [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) (main branch)
 - [bootcamp-materials/references/](https://github.com/josephrobertlopez/prompt-engineering-bootcamp/tree/master/bootcamp-materials/references) (templates, guides)
 - ReAct paper: Yao et al. (2022) - https://arxiv.org/abs/2210.03629
 - Tree of Thoughts: Yao et al. (2023) - https://arxiv.org/abs/2305.10601

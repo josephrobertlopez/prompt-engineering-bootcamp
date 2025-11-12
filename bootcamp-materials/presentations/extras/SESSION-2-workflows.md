@@ -167,7 +167,7 @@ Step 5: Validate & Document (10 min)
 **Goal:** Create structured execution plan for UserController migration
 
 **Instructions:**
-1. **Reference:** [file-2-planning.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-2-planning.md) in spring-migration-demo (demo-day-2 branch)
+1. **Reference:** [file-2-planning.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-2-planning.md) in spring-migration-demo (main branch)
 2. Think about migration order: What must happen before what?
    - Imports must compile first
    - Annotations build on imports
@@ -273,7 +273,7 @@ If any phase fails:
 ```
 
 **Success Criteria:**
-- file-2-planning.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-2-planning.md)
+- file-2-planning.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-2-planning.md)
 - File contains 4-5 phases
 - Each phase has clear "Why" explanation
 - Each phase has validation criteria
@@ -291,7 +291,7 @@ If any phase fails:
 **Goal:** Document decision about exception handling approach
 
 **Instructions:**
-1. **Reference:** [file-3-abcd.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-3-abcd.md) in spring-migration-demo (demo-day-2 branch)
+1. **Reference:** [file-3-abcd.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-3-abcd.md) in spring-migration-demo (main branch)
 2. Think about UserController exception handling: Currently uses try-catch with ResponseEntity.badRequest() or notFound()
 3. Consider: Should we enhance this with ProblemDetail pattern?
 4. Present options and make recommendation
@@ -382,7 +382,7 @@ This migration focuses on Spring framework upgrade (Spring 2.7 → 3.2), not fea
 ```
 
 **Success Criteria:**
-- file-3-abcd.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-3-abcd.md)
+- file-3-abcd.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-3-abcd.md)
 - File contains 1-2 real decision points
 - Each decision has 4 options (A, B, C, D)
 - Recommendation is explained with reasoning
@@ -400,7 +400,7 @@ This migration focuses on Spring framework upgrade (Spring 2.7 → 3.2), not fea
 **Goal:** Synthesize all modes and prepare for code generation
 
 **Instructions:**
-1. **Reference:** [file-4-implementation.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-4-implementation.md) in spring-migration-demo (demo-day-2 branch)
+1. **Reference:** [file-4-implementation.md](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-4-implementation.md) in spring-migration-demo (main branch)
 2. Reference all previous modes (file-0 through file-3)
 3. Include the "before" code from UserController
 4. Provide clear generation instructions
@@ -574,7 +574,7 @@ Complete UserController.java class that:
 ```
 
 **Success Criteria:**
-- file-4-implementation.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/demo-day-2/demos/session-2-advanced-patterns/prompts/file-4-implementation.md)
+- file-4-implementation.md [available in spring-migration-demo repo](https://github.com/josephrobertlopez/spring-migration-demo/blob/main/demos/session-2-advanced-patterns/prompts/file-4-implementation.md)
 - File references all 4 previous modes (Constitution, Specification, Planning, ABCD)
 - File includes complete "before" code
 - File has clear generation instructions

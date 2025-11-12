@@ -31,7 +31,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 **Focus:** ADRs + Foundational prompt patterns (Persona, Few-shot, Template, Chain-of-Thought)
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
 **File:** [SESSION-1-industry-standards.md](SESSION-1-industry-standards.md)
-**Demo:** [demo-day-1 branch](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1)
+**Demo:** [main branch](https://github.com/josephrobertlopez/spring-migration-demo) - demos/session-1-industry-standards/
 
 **Slides (20 min):**
 1. Recap - The 80/20 You Already Know (2 min)
@@ -68,7 +68,7 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 **Focus:** ReAct, Tree of Thoughts, Meta-prompting
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
 **File:** [SESSION-2-advanced-patterns.md](SESSION-2-advanced-patterns.md)
-**Demo:** [demo-day-2 branch](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2)
+**Demo:** [main branch](https://github.com/josephrobertlopez/spring-migration-demo) - demos/session-2-advanced-patterns/
 
 **Slides (20 min):**
 1. Recap Session 1 (2 min)
@@ -237,8 +237,8 @@ If 5 developers each migrate 10 files:
 
 ### **Spring Migration Demo Repository:**
 8. ✅ [spring-migration-demo](https://github.com/josephrobertlopez/spring-migration-demo) - Working Spring Boot migration code
-   - `demo-day-1` branch: Session 1 materials (foundational patterns)
-   - `demo-day-2` branch: Session 2 materials (advanced orchestration)
+   - `demos/session-1-industry-standards/` - Session 1 materials (foundational patterns)
+   - `demos/session-2-advanced-patterns/` - Session 2 materials (advanced orchestration)
 
 ### **Repo:**
 - https://github.com/josephrobertlopez/spring-migration-demo
