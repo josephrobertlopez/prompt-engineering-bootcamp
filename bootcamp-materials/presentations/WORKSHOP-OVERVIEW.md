@@ -27,10 +27,11 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 
 ## 📚 SESSION BREAKDOWN
 
-### **SESSION 1: PROMPT FILES AND CONFIGURATION** (90 minutes)
-**Focus:** Create Constitution and Specification prompt files
+### **SESSION 1: INDUSTRY STANDARDS & FOUNDATIONAL PATTERNS** (90 minutes)
+**Focus:** ADRs + Foundational prompt patterns (Persona, Few-shot, Template, Chain-of-Thought)
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-1-prompt-files.md](SESSION-1-prompt-files.md)
+**File:** [SESSION-1-industry-standards.md](SESSION-1-industry-standards.md)
+**Demo:** [demo-day-1 branch](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-1)
 
 **Slides (20 min):**
 1. Recap - The 80/20 You Already Know (2 min)
@@ -63,10 +64,11 @@ Build on your existing **4 core techniques** (Chain of Thought, ReAct, Tree of T
 
 ---
 
-### **SESSION 2: WORKFLOWS AND ORCHESTRATION** (90 minutes)
-**Focus:** Orchestrate all 5 prompt modes together
+### **SESSION 2: ADVANCED PATTERNS & ORCHESTRATION** (90 minutes)
+**Focus:** ReAct, Tree of Thoughts, Meta-prompting
 **Format:** 15 min presentation + 60 min hands-on + 15 min review
-**File:** [SESSION-2-workflows.md](SESSION-2-workflows.md)
+**File:** [SESSION-2-advanced-patterns.md](SESSION-2-advanced-patterns.md)
+**Demo:** [demo-day-2 branch](https://github.com/josephrobertlopez/spring-migration-demo/tree/demo-day-2)
 
 **Slides (20 min):**
 1. Recap Session 1 (2 min)
@@ -223,8 +225,8 @@ If 5 developers each migrate 10 files:
 ## 📦 MATERIALS PROVIDED
 
 ### **Session Guides:**
-1. ✅ [SESSION-1-prompt-files.md](SESSION-1-prompt-files.md) - Prompt Files and Configuration
-2. ✅ [SESSION-2-workflows.md](SESSION-2-workflows.md) - Workflows and Orchestration
+1. ✅ [SESSION-1-industry-standards.md](SESSION-1-industry-standards.md) - Industry Standards & Foundational Patterns (Day 1)
+2. ✅ [SESSION-2-advanced-patterns.md](SESSION-2-advanced-patterns.md) - Advanced Patterns & Orchestration (Day 2)
 
 ### **Reference Materials:**
 3. ✅ [foundational-patterns.md](../references/foundational-patterns.md) - Few-shot, Chain-of-Thought, Persona, Template patterns
