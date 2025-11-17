@@ -3,12 +3,8 @@ marp: true
 theme: accenture-theme
 paginate: true
 headingDivider: 2
+html: true
 ---
-
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true, theme: 'base' });
-</script>
 
 <!-- _class: hero -->
 
@@ -266,3 +262,8 @@ flowchart LR
 **Coming up**: Specification.md + Implementation-plan.md
 
 *Keep your knowledge-base.md handy!*
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true, theme: 'base' });
+</script>

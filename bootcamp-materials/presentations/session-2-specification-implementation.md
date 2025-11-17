@@ -3,12 +3,8 @@ marp: true
 theme: accenture-theme
 paginate: true
 headingDivider: 2
+html: true
 ---
-
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true, theme: 'base' });
-</script>
 
 <!-- _class: hero -->
 
@@ -399,3 +395,8 @@ Run validation rules from KB section 2.3
 
 **Contact**: [instructor email]
 **Materials**: [shared folder link]
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true, theme: 'base' });
+</script>
