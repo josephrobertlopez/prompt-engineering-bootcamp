@@ -22,7 +22,17 @@ html: true
 
 **Goal**: Build a complete prompt file system from raw materials
 
-**Method**: Discovery → Construction → Validation
+```mermaid
+flowchart LR
+    A[📄 Raw Materials<br/>FY26 Guide + Interviews] --> B[🔍 Discovery<br/>Apply 3 Questions]
+    B --> C[🏗️ Construction<br/>Build knowledge-base.md]
+    C --> D[✓ Validation<br/>Peer Review]
+
+    style A fill:#f0f0f0,stroke:#999
+    style B fill:#A100FF,stroke:#A100FF,color:#fff
+    style C fill:#A100FF,stroke:#A100FF,color:#fff
+    style D fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 ---
 
@@ -151,9 +161,23 @@ flowchart LR
 ## Demo Insights (Key Takeaways)
 
 **Pattern Recognition:**
-- Lists with fixed items → knowledge-base
-- Fields requiring user input → specification
-- Sequences of actions → implementation-plan
+
+```mermaid
+flowchart TD
+    START[Content Element] --> Q1{Is it a fixed list<br/>or definition?}
+    Q1 -->|Yes| KB[knowledge-base.md]
+    Q1 -->|No| Q2{Does it require<br/>user input?}
+    Q2 -->|Yes| SPEC[specification.md]
+    Q2 -->|No| Q3{Is it a sequence<br/>of steps?}
+    Q3 -->|Yes| IMPL[implementation-plan.md]
+    Q3 -->|No| REVIEW[Review: might be<br/>multiple types]
+
+    style KB fill:#A100FF,stroke:#A100FF,color:#fff
+    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style IMPL fill:#7ED321,stroke:#7ED321,color:#fff
+    style START fill:#f0f0f0,stroke:#999
+    style REVIEW fill:#FFB74D,stroke:#F57C00,color:#000
+```
 
 **Edge Cases:**
 - Hybrid content (e.g., "select from these options")

@@ -64,13 +64,21 @@ flowchart TD
 
 ## Specification Structure
 
-**Recommended sections:**
+```mermaid
+flowchart TD
+    SPEC[specification.md] --> META[1️⃣ Instance Metadata<br/>who, when, what]
+    SPEC --> SCOPE[2️⃣ Scope Definition<br/>boundaries]
+    SPEC --> SELECT[3️⃣ Selected Options<br/>from knowledge-base]
+    SPEC --> CONST[4️⃣ Constraints<br/>time, resources, dependencies]
+    SPEC --> SUCCESS[5️⃣ Success Criteria<br/>measurable outcomes]
 
-1. **Instance Metadata** (who, when, what)
-2. **Scope Definition** (boundaries)
-3. **Selected Options** (from knowledge-base choices)
-4. **Constraints** (time, resources, dependencies)
-5. **Success Criteria** (measurable outcomes)
+    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style META fill:#A100FF,stroke:#A100FF,color:#fff
+    style SCOPE fill:#A100FF,stroke:#A100FF,color:#fff
+    style SELECT fill:#A100FF,stroke:#A100FF,color:#fff
+    style CONST fill:#A100FF,stroke:#A100FF,color:#fff
+    style SUCCESS fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 ---
 
@@ -134,14 +142,23 @@ Team: Cloud Migration Practice
 
 ## Implementation-plan.md: The "How"
 
-**Purpose**: Step-by-step execution guide
+```mermaid
+flowchart TD
+    START[Start] --> STEP1[1️⃣ Review<br/>knowledge-base categories]
+    STEP1 --> STEP2[2️⃣ Select 4 priorities<br/>1-2 per category]
+    STEP2 --> STEP3[3️⃣ Choose metrics<br/>for each priority]
+    STEP3 --> STEP4[4️⃣ Document<br/>in Workday]
+    STEP4 --> STEP5[5️⃣ Schedule<br/>manager review]
+    STEP5 --> END[Complete]
 
-**FY26 Priorities Example:**
-1. Review knowledge-base categories
-2. Select 4 priorities (1-2 per category)
-3. Choose metrics for each
-4. Document in Workday
-5. Schedule manager review
+    style START fill:#f0f0f0,stroke:#999
+    style STEP1 fill:#A100FF,stroke:#A100FF,color:#fff
+    style STEP2 fill:#A100FF,stroke:#A100FF,color:#fff
+    style STEP3 fill:#A100FF,stroke:#A100FF,color:#fff
+    style STEP4 fill:#A100FF,stroke:#A100FF,color:#fff
+    style STEP5 fill:#A100FF,stroke:#A100FF,color:#fff
+    style END fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 **Key**: Actionable steps that transform spec → reality
 
@@ -219,6 +236,28 @@ flowchart LR
 1. **Knowledge-base**: "What do I need to know about the domain?"
 2. **Specification**: "What am I building/doing specifically?"
 3. **Implementation**: "What are my exact next actions?"
+
+```mermaid
+flowchart TD
+    USER[👤 User starts task] --> IMPL[📋 implementation-plan.md<br/>Read step 1]
+    IMPL --> CHECK{Need domain<br/>knowledge?}
+    CHECK -->|Yes| KB[📚 knowledge-base.md<br/>Look up constants]
+    CHECK -->|No| EXEC[⚡ Execute step]
+    KB --> EXEC
+    EXEC --> CHECK2{Need instance<br/>details?}
+    CHECK2 -->|Yes| SPEC[📄 specification.md<br/>Get specifics]
+    CHECK2 -->|No| NEXT[Next step]
+    SPEC --> NEXT
+    NEXT --> DONE{All steps<br/>complete?}
+    DONE -->|No| IMPL
+    DONE -->|Yes| SUCCESS[✅ Task complete]
+
+    style USER fill:#f0f0f0,stroke:#999
+    style KB fill:#A100FF,stroke:#A100FF,color:#fff
+    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style IMPL fill:#7ED321,stroke:#7ED321,color:#fff
+    style SUCCESS fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 **Transfer test**: Works for FY26 priorities AND recipe AND API docs
 
