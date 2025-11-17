@@ -1,0 +1,325 @@
+/*
+ * Accenture Corporate Presentation Theme for Marp
+ * Based on minimalist corporate style observed from screenshots
+ * White backgrounds, purple accents, clean footer layout
+ */
+
+/* @theme accenture */
+
+@import 'default';
+
+:root {
+  --accenture-purple: #A100FF;
+  --accenture-dark: #222222;
+  --accenture-grey: #666666;
+  --accent-blue: #4A90E2;
+  --accent-green: #7ED321;
+  --bg-white: #FFFFFF;
+  --bg-light-grey: #F5F5F5;
+}
+
+section {
+  background-color: var(--bg-white);
+  color: var(--accenture-dark);
+  font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+  padding: 60px 80px;
+}
+
+/* Title slide (hero) */
+section.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+section.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+section.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+section.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+section.hero .subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+/* Headers */
+h1 {
+  color: var(--accenture-dark);
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 4px solid var(--accenture-purple);
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: var(--accenture-purple);
+  font-size: 42px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--accenture-dark);
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Text elements */
+p, li {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  margin-left: 40px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Purple accent for emphasis */
+strong, b {
+  color: var(--accenture-purple);
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  color: var(--accenture-grey);
+}
+
+/* Code blocks */
+code {
+  background: var(--bg-light-grey);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 24px;
+}
+
+pre {
+  background: var(--bg-light-grey);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accenture-purple);
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th {
+  background: var(--accenture-purple);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: var(--bg-light-grey);
+}
+
+/* Blockquotes / callouts */
+blockquote {
+  border-left: 6px solid var(--accenture-purple);
+  background: var(--bg-light-grey);
+  padding: 20px 30px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Footer layout: logo left | copyright center | slide # right */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 30px;
+  right: 80px;
+  font-size: 18px;
+  color: var(--accenture-grey);
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--accenture-grey);
+}
+
+footer .logo {
+  width: 120px;
+}
+
+footer .copyright {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  background: transparent;
+}
+
+/* Mermaid boxes with Accenture colors */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+  stroke-width: 2px;
+}
+
+/* Purple nodes */
+.mermaid .node.purple rect {
+  fill: var(--accenture-purple);
+  stroke: var(--accenture-purple);
+}
+
+/* Blue nodes */
+.mermaid .node.blue rect {
+  fill: var(--accent-blue);
+  stroke: var(--accent-blue);
+}
+
+/* Green nodes */
+.mermaid .node.green rect {
+  fill: var(--accent-green);
+  stroke: var(--accent-green);
+}
+
+/* White background diagrams */
+.mermaid .flowchart rect,
+.mermaid .flowchart circle {
+  fill: white;
+  stroke: var(--accenture-purple);
+  stroke-width: 2px;
+}
+
+/* Geometric overlay for title slides */
+.geometric-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.2) 100%);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* Exercise slide styling */
+section.exercise {
+  background: linear-gradient(to bottom, var(--bg-white) 0%, var(--bg-light-grey) 100%);
+  border-left: 8px solid var(--accenture-purple);
+}
+
+section.exercise h2::before {
+  content: '✏️ ';
+}
+
+/* Validation checkpoint styling */
+section.checkpoint {
+  background: var(--bg-light-grey);
+  border: 4px solid var(--accenture-purple);
+  border-radius: 12px;
+}
+
+section.checkpoint h2::before {
+  content: '✓ ';
+  color: var(--accenture-purple);
+}
+
+/* Poll/Q&A slide styling */
+section.poll {
+  background: linear-gradient(135deg, var(--bg-white) 0%, #FAF5FF 100%);
+}
+
+section.poll h2 {
+  color: var(--accenture-purple);
+}
+
+/* Micro-break slide */
+section.break {
+  background: var(--accenture-purple);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.break h1, section.break h2, section.break p {
+  color: white;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-purple {
+  color: var(--accenture-purple);
+}
+
+.bg-purple {
+  background: var(--accenture-purple);
+  color: white;
+}
+
+.accent-box {
+  background: var(--bg-light-grey);
+  border-left: 6px solid var(--accenture-purple);
+  padding: 20px;
+  margin: 20px 0;
+}

@@ -1,0 +1,7 @@
+<svg width="120" height="30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder Accenture logo - Replace with official asset -->
+  <text x="10" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#A100FF">
+    accenture
+  </text>
+  <path d="M 115 15 L 118 18 L 115 21" stroke="#A100FF" stroke-width="2" fill="none"/>
+</svg>

@@ -22,6 +22,10 @@ audit-inventory.txt
 .env
 .env.local
 
+# Node.js dependencies (Marp CLI)
+node_modules/
+package-lock.json
+
 # Build artifacts (if markdown processors used)
 .cache/
 dist/

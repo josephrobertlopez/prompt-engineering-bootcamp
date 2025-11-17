@@ -1,0 +1,105 @@
+ACCENTURE FY26 PRIORITIES - QUICK REFERENCE
+============================================
+
+📋 THE FOUR REQUIRED CATEGORIES (One priority in each)
+------------------------------------------------------
+
+1. CLIENT VALUE CREATION
+   How you deliver 360° value for clients, build relationships, and create exceptional client experiences
+
+2. AI ENABLEMENT  
+   How you use AI, develop AI skills, and embed AI into offerings/processes
+
+3. GREAT PLACE TO WORK FOR REINVENTORS
+   How you build exceptional teams through mentorship, engagement, and culture
+
+4. COMMUNITY
+   How you make impact through corporate citizenship, volunteering, and community support
+
+📊 EACH PRIORITY NEEDS
+----------------------
+✓ Clear description of what you'll accomplish
+✓ 1-3 metrics from the predefined list
+✓ Expected value/outcome (quantified)
+✓ ABCD Reflection (see below)
+✓ Status (In Progress/Completed/Not Started)
+✓ Reviewer (manager's enterprise ID)
+
+🎯 ABCD REFLECTION FRAMEWORK
+-----------------------------
+A - ACCOMPLISHMENTS: What you did (specific actions, deliverables, milestones)
+B - BUSINESS IMPACT: Value created (metrics, %, $, client feedback)
+C - CHALLENGES OVERCOME: Obstacles navigated (problems solved, resilience shown)
+D - DEVELOPMENT & LEARNING: Skills gained (certifications, growth, mentoring)
+
+📈 AVAILABLE METRICS (Select up to 3 per priority)
+--------------------------------------------------
+
+NON-FINANCIAL:
+• AI Proficiency / Skills
+• AI Tool Usage
+• Asset / Solution Development
+• Client Partnership/Relationships
+• Community Board/Committee
+• Community Volunteering
+• High Quality Deliverables / Client Delivery
+• Inclusive Programming / Initiatives
+• Innovation
+• Mentorship/People Leadership
+• Office/Network Involvement
+• One Accenture
+• Project-Specific KPIs (Non-Financial)
+• Recognition & Feedback
+• Recruiting Events/Campaigns
+• Reinvention Console / KX Contributions
+• Skills/Specializations/Learning
+• Social & Environmental Citizenship
+• Team Engagement Survey / Actions
+
+FINANCIAL:
+• Accurate Time/Expense Reporting
+• On Time/On Budget Project Delivery
+• Project-Specific KPIs (Financial)
+
+✅ SUCCESS TIPS
+---------------
+1. QUANTIFY EVERYTHING - Use numbers, %, $, time saved
+2. BE SPECIFIC - Real examples, not generic statements
+3. UPDATE QUARTERLY - Don't wait until year-end
+4. SHOW YOUR IMPACT - Not just team achievements
+5. ALIGN WITH MANAGER - Discuss before finalizing
+6. USE STAR METHOD - Situation, Task, Action, Result
+
+❌ AVOID THESE MISTAKES
+-----------------------
+• Vague priorities without measurable outcomes
+• Writing reflections at the last minute
+• Missing business impact quantification
+• Generic language that could apply to anyone
+• Not connecting to strategic categories
+
+📝 EXAMPLE PRIORITY
+-------------------
+Category: AI Enablement
+Priority: Develop AI skills across team and embed generative AI tools into project workflows
+Metrics: AI Tool Usage | Skills/Specializations/Learning
+Value: Achieved 80% team adoption and 30% productivity improvement
+
+A - Accomplishments: Launched weekly 'AI Learning Hours' for 12-person team. Created internal knowledge base with 25+ AI use cases. Led pilot program integrating GitHub Copilot.
+
+B - Business Impact: Increased team coding productivity by 30% through sprint velocity. Reduced code review time by 40%. Team AI proficiency scores increased from 2.1 to 4.3 out of 5.
+
+C - Challenges Overcome: Addressed skepticism through blind testing showing 85% code quality match. Overcame budget constraints by demonstrating ROI. Navigated security concerns with governance framework.
+
+D - Development & Learning: Completed Generative AI for Developers certification. Became internal expert on prompt engineering. Developed training facilitation skills. Learned change management principles.
+
+Status: In Progress
+Reviewer: manager.name
+
+🔗 ACCESS
+---------
+Workday → Priorities Homepage
+wd103.myworkday.com/accenture
+
+---
+Quick Reference v1.0 | November 2025

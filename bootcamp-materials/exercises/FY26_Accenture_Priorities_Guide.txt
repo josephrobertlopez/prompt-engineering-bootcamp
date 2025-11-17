@@ -1,0 +1,255 @@
+ACCENTURE FY26 PRIORITIES - COMPLETE GUIDE
+==========================================
+Last Updated: November 2025
+
+PURPOSE OF THIS DOCUMENT
+------------------------
+This guide provides complete context on Accenture's FY26 priorities system, including category definitions, metric types, and the ABCD reflection framework. Share this with colleagues, team members, or anyone who needs to understand how Accenture's performance management priorities work.
+
+OVERVIEW
+--------
+For FY26, Accenture requires all employees (all career levels) to set ONE priority in EACH of the four strategic categories. These priorities align with Accenture's two-part strategy: to be the reinvention partner of choice for clients and to be the most client-focused, AI-enabled, great place to work for reinventors in the world.
+
+THE FOUR FY26 PRIORITY CATEGORIES
+----------------------------------
+
+1. CLIENT VALUE CREATION
+   Definition: How you create/contribute to success for our clients by delivering 360° value, building and nurturing trusted key client relationships and creating a collaborative and exceptional client experience.
+   
+   This includes:
+   • Delivering tangible business outcomes at clients with our partners (measured through Client NPS, client value meter, and/or public credentials)
+   • Innovating & sharing knowledge for the good of all clients, by publishing thought leadership, developing practice or industry offerings and contributing to the Reinvention Console
+   • Delivering to plan and contributing to business results of growth (sales & revenue), profitability (pricing & income) and client-facing time (chargeability & billability), based on your role
+
+2. AI ENABLEMENT
+   Definition: How you use AI individually, how you develop your AI skills and those of your team, and how, depending on your role, you embed AI into offerings, assets, and processes at our clients and Accenture.
+   
+   This includes:
+   • Proactively learning and developing AI skills
+   • Using internal tools such as Reinvention Console, Amythest, CoPilot, Workbench, Enterprise 360 Navigator, ART, GenWizard, AI Refinery and SynOps – as well as any other AI tools specific to the work you do internally or for our clients
+
+3. GREAT PLACE TO WORK FOR REINVENTORS
+   Definition: How you create/contribute to exceptional teams.
+   
+   This includes:
+   • Attract, inspire, engage, develop and retain an inclusive workforce of Reinventors
+   • Understanding engagement through Q12, building an action plan and executing on that plan
+   • Create experiences where every person feels heard, recognized, understands our mission and purpose
+   • Build a culture that encourages collaboration, celebrates innovation, reinvention & inspires high performance
+   • Lead by example through mentorship, team engagement, ERG membership or other Accenture communities
+
+4. COMMUNITY
+   Definition: How you make an impact in the areas of corporate citizenship and responsible business, supporting and enhancing the communities in which we work and live; it can include how we volunteer individually or as teams within our communities.
+
+PRIORITY STRUCTURE
+------------------
+Each priority must include:
+
+1. PRIORITY DESCRIPTION
+   Clear statement of what you plan to accomplish
+   - Be specific and actionable
+   - Focus on outcomes, not just activities
+   - Align with your role and responsibilities
+
+2. METRICS (Select up to 3 per priority)
+   Choose from predefined metric types (see full list below)
+   - Can select 1-3 metrics per priority
+   - Mix of quantitative and qualitative is recommended
+   - Should be measurable and trackable
+
+3. VALUE/EXPECTED OUTCOME
+   What success looks like
+   - Include specific numbers where possible
+   - Time-bound targets
+   - Clear definition of "done"
+
+4. ABCD REFLECTION
+   Documentation of your progress and impact (see framework below)
+
+5. STATUS
+   Current state: "In Progress", "Completed", or "Not Started"
+
+6. REVIEWER
+   Enterprise ID of your priority reviewer (usually your manager)
+   Format: firstname.lastname
+
+METRIC TYPES AVAILABLE
+-----------------------
+
+NON-FINANCIAL METRICS (24 options):
+□ AI Proficiency / Skills
+□ AI Tool Usage
+□ Asset / Solution Development
+□ Client Partnership/Relationships
+□ Community Board/Committee
+□ Community Volunteering
+□ High Quality Deliverables / Client Delivery
+□ Inclusive Programming / Initiatives
+□ Innovation
+□ Mentorship/People Leadership
+□ Office/Network Involvement
+□ One Accenture
+□ Other (Non-Financial)
+□ Project-Specific KPIs (Non-Financial)
+□ Recognition & Feedback
+□ Recruiting Events/Campaigns
+□ Reinvention Console / KX Contributions
+□ Skills/Specializations/Learning
+□ Social & Environmental Citizenship
+□ Team Engagement Survey / Actions
+
+FINANCIAL METRICS (4 options):
+□ Accurate Time/Expense Reporting
+□ On Time/On Budget Project Delivery
+□ Other (Financial)
+□ Project-Specific KPIs (Financial)
+
+ABCD REFLECTION FRAMEWORK
+--------------------------
+The ABCD reflection is how you document your accomplishments and impact throughout the year. It's critical for performance reviews and promotion decisions.
+
+A - ACCOMPLISHMENTS (What You Did)
+   • What specific actions did you take?
+   • What did you deliver or complete?
+   • What milestones did you achieve?
+   • Be specific with examples and timeframes
+   
+   Example: "Led development and deployment of custom AI analytics dashboard using Azure ML and Power BI. Delivered 3 months ahead of schedule with zero critical bugs."
+
+B - BUSINESS IMPACT (Value Created)
+   • How did your work create value for clients?
+   • What measurable results did you achieve?
+   • How did you contribute to team/project success?
+   • Include metrics, percentages, client feedback
+   
+   Example: "Reduced client's monthly reporting cycle from 5 days to 2 days (60% improvement). Client NPS increased from 7 to 9. Generated $500K in additional revenue opportunities."
+
+C - CHALLENGES OVERCOME (Obstacles Navigated)
+   • What obstacles or constraints did you face?
+   • How did you navigate difficulties?
+   • What creative solutions did you develop?
+   • How did you demonstrate resilience?
+   
+   Example: "Overcame initial data quality issues by implementing automated data cleansing pipeline. Navigated stakeholder resistance by conducting 8 workshops demonstrating ROI."
+
+D - DEVELOPMENT & LEARNING (Skills Gained)
+   • What new skills or knowledge did you gain?
+   • How did you grow professionally?
+   • What tools or technologies did you master?
+   • How did you contribute to others' development?
+   
+   Example: "Earned Azure AI Engineer certification. Mastered Power BI advanced analytics. Developed presentation skills through client workshops. Mentored 2 junior analysts."
+
+REFLECTION WRITING BEST PRACTICES
+----------------------------------
+1. Be specific with real examples from your work
+2. Quantify impact wherever possible (%, $, time saved)
+3. Use STAR method: Situation, Task, Action, Result
+4. Connect to priority categories and metrics
+5. Update reflections regularly (quarterly recommended)
+6. Focus on YOUR contributions, not just team achievements
+7. Highlight innovation, collaboration, and leadership
+8. Be honest and authentic - avoid exaggeration
+9. Include both successes and learning experiences
+10. Make it easy for reviewers to see your value
+
+WHY ABCD REFLECTIONS MATTER
+----------------------------
+• They serve as documentation of your yearly contributions
+• Reviewers use them to assess performance and promotion readiness
+• Strong reflections with significant project impact lead to better appraisals
+• They help you remember your accomplishments during review discussions
+• They demonstrate your ability to articulate business value
+• They show your growth trajectory and learning mindset
+
+IMPORTANT NOTES
+---------------
+• Some priorities below may still be mapped to old FY25 categories. If a priority should remain "in progress" in FY26, edit and select one of the new categories.
+• When completing priorities, you may be prompted to update the category if the completed-on date is in FY26 and you selected an FY25 completed-on date.
+• Priorities set the foundation for feedback and reflections, displayed front and center in talent discussions
+• You can Edit or click the ellipses to self-reflect and view a summary of requested and received reflections
+
+TIMELINE
+--------
+• Set priorities early in FY26 (typically by October/November)
+• Update reflections quarterly throughout the year
+• Complete final reflections before year-end review cycle
+• Discuss with manager during 1:1s and formal reviews
+
+SYSTEM ACCESS
+-------------
+• Access priorities through Workday at: wd103.myworkday.com/accenture
+• Navigate to: Priorities Homepage
+• Use "Add New Priority" button to create priorities
+• Use "Last Year's Completed Priorities" to review previous year
+• Use "Reflections Status" to check feedback requests
+• Use "Reviewer Dashboard" if you review others' priorities
+
+EXAMPLE COMPLETE PRIORITY
+--------------------------
+Category: Client Value Creation
+Priority: Implement AI-powered data analytics solution for key client
+Metrics: High Quality Deliverables / Client Delivery
+Value: Deployed solution reducing client reporting time by 60%
+
+ABCD Reflection:
+A - Accomplishments: Led development and deployment of custom AI analytics dashboard using Azure ML and Power BI. Delivered 3 months ahead of schedule with zero critical bugs.
+
+B - Business Impact: Reduced client's monthly reporting cycle from 5 days to 2 days (60% improvement). Client NPS increased from 7 to 9. Generated $500K in additional revenue opportunities identified through insights.
+
+C - Challenges Overcome: Overcame initial data quality issues by implementing automated data cleansing pipeline. Navigated stakeholder resistance by conducting 8 workshops demonstrating ROI. Resolved integration challenges with legacy systems through custom API development.
+
+D - Development & Learning: Earned Azure AI Engineer certification. Mastered Power BI advanced analytics. Developed presentation skills through client workshops. Mentored 2 junior analysts on AI/ML fundamentals.
+
+Status: Completed
+Reviewer: manager.name
+
+TIPS FOR SUCCESS
+-----------------
+1. Start Early: Don't wait until the deadline to set priorities
+2. Be Ambitious But Realistic: Stretch yourself without setting impossible goals
+3. Align With Manager: Discuss priorities with your manager before finalizing
+4. Document Regularly: Update reflections monthly or quarterly, not just at year-end
+5. Quantify Everything: Numbers make impact clear and undeniable
+6. Show Leadership: Even if you don't manage people, show how you lead initiatives
+7. Connect to Strategy: Link your priorities to Accenture's strategic goals
+8. Get Feedback: Ask colleagues and clients for input on your impact
+9. Tell Your Story: Make it easy for reviewers to understand your value
+10. Be Proud: Your priorities should reflect work you're genuinely proud of
+
+COMMON MISTAKES TO AVOID
+------------------------
+❌ Vague priorities like "Improve my skills"
+❌ No measurable outcomes or metrics
+❌ Writing reflections at the last minute
+❌ Copying team achievements without highlighting your role
+❌ Generic language that could apply to anyone
+❌ Missing business impact - just describing activities
+❌ Forgetting to quantify results
+❌ Not connecting to strategic categories
+❌ Setting priorities that don't align with your role
+❌ Submitting without manager review
+
+RESOURCES
+---------
+• Priorities Explorer: For priority examples and guidance
+• Performance and Rewards Hub: Additional guidance and frameworks
+• Your Manager: Your primary resource for priority setting
+• Career Counselor: Can provide guidance on career-focused priorities
+• Peers: Share best practices and examples
+
+QUESTIONS?
+----------
+Contact your:
+• Direct Manager/People Lead
+• Career Counselor
+• HR Business Partner
+• Check the Performance and Rewards Hub in Workday
+
+---
+
+VERSION HISTORY
+Version 1.0 - November 2025 - Initial guide based on FY26 priority structure
+
+DISCLAIMER
+This is an unofficial guide created to help Accenture employees understand the FY26 priorities system. Always refer to official Accenture communications and your manager for authoritative guidance.

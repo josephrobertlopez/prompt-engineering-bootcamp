@@ -1,0 +1,25 @@
+{
+  "name": "docs-workshop-presentations",
+  "version": "1.0.0",
+  "description": "First-Principles Prompt Engineering Workshop - Accenture Style Presentations",
+  "private": true,
+  "scripts": {
+    "build:html": "npm run build:html:s1 && npm run build:html:s2",
+    "build:html:s1": "marp bootcamp-materials/presentations/session-1-framework-intro.md --html --theme bootcamp-materials/presentations/themes/accenture-theme.css -o bootcamp-materials/presentations/exports/session-1-framework-intro.html",
+    "build:html:s2": "marp bootcamp-materials/presentations/session-2-specification-implementation.md --html --theme bootcamp-materials/presentations/themes/accenture-theme.css -o bootcamp-materials/presentations/exports/session-2-specification-implementation.html",
+    "build:pdf:s1": "marp bootcamp-materials/presentations/session-1-framework-intro.md --pdf --theme bootcamp-materials/presentations/themes/accenture-theme.css --allow-local-files -o bootcamp-materials/presentations/exports/session-1-framework-intro.pdf",
+    "build:pdf:s2": "marp bootcamp-materials/presentations/session-2-specification-implementation.md --pdf --theme bootcamp-materials/presentations/themes/accenture-theme.css --allow-local-files -o bootcamp-materials/presentations/exports/session-2-specification-implementation.pdf",
+    "build:pdf": "npm run build:pdf:s1 && npm run build:pdf:s2",
+    "build:pptx:s1": "marp bootcamp-materials/presentations/session-1-framework-intro.md --pptx --theme bootcamp-materials/presentations/themes/accenture-theme.css --allow-local-files -o bootcamp-materials/presentations/exports/session-1-framework-intro.pptx",
+    "build:pptx:s2": "marp bootcamp-materials/presentations/session-2-specification-implementation.md --pptx --theme bootcamp-materials/presentations/themes/accenture-theme.css --allow-local-files -o bootcamp-materials/presentations/exports/session-2-specification-implementation.pptx",
+    "build:pptx": "npm run build:pptx:s1 && npm run build:pptx:s2",
+    "build:all": "npm run build:html && npm run build:pdf && npm run build:pptx",
+    "dev": "marp -w bootcamp-materials/presentations/session-1-framework-intro.md --theme bootcamp-materials/presentations/themes/accenture-theme.css --html"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
