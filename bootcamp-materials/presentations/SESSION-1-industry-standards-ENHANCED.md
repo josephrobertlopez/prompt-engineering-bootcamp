@@ -57,39 +57,39 @@ By the end of this session, you will:
 5. **Recognize** multiple valid approaches exist
    - ADRs, Spec-Kit, custom patterns
 
-## The Problem: Ad-Hoc AI Prompting
+## The Problem - Ad-Hoc AI Prompting
 
 **Current State for Most Developers:**
 
 ```mermaid
-flowchart LR
-    DEV1[👨‍💻 Developer:<br/>"Migrate to Spring Boot 3"] --> AI1[🤖 AI generates code]
-    AI1 --> DEV2[👨‍💻 "Not quite right...<br/>try again"]
-    DEV2 --> AI2[🤖 Generates different code]
-    AI2 --> DEV3[👨‍💻 "Still missing patterns...<br/>explain more..."]
-    DEV3 -.->|Repeat cycle| DEV1
+flowchart TD
+    A[Prompt AI] --> B[Get Result]
+    B --> C[Not Right]
+    C --> D[Tweak Prompt]
+    D --> A
 
-    style DEV1 fill:#FFB74D,stroke:#F57C00,color:#000
-    style DEV2 fill:#FFB74D,stroke:#F57C00,color:#000
-    style DEV3 fill:#ef5350,stroke:#c62828,color:#fff
-    style AI1 fill:#f0f0f0,stroke:#999
-    style AI2 fill:#f0f0f0,stroke:#999
+    style A fill:#FFB74D,stroke:#F57C00,color:#000
+    style B fill:#f0f0f0,stroke:#999
+    style C fill:#ef5350,stroke:#c62828,color:#fff
+    style D fill:#FFB74D,stroke:#F57C00,color:#000
 ```
 
 **Problems:**
-- ❌ Every prompt starts from scratch
-- ❌ No shared team knowledge in prompts
-- ❌ Inconsistent results across files
-- ❌ Can't track what worked vs what didn't
-- ❌ Becomes "vibe coding" (accepting unreviewed AI output)
+- Every prompt starts from scratch
+- No shared team knowledge in prompts
+- Inconsistent results across files
+- Cannot track what worked vs what did not
+- Becomes vibe coding (accepting unreviewed AI output)
 
-**The Solution:**
+---
+
+## The Solution
 
 ```mermaid
 flowchart TD
-    STRUCT[📋 Structured Patterns] --> VERSIONED[📦 Version Controlled]
-    VERSIONED --> REUSE[♻️ Reusable Templates]
-    REUSE --> CONSISTENT[✅ Consistent Results]
+    STRUCT[Structured Patterns] --> VERSIONED[Version Controlled]
+    VERSIONED --> REUSE[Reusable Templates]
+    REUSE --> CONSISTENT[Consistent Results]
 
     style STRUCT fill:#A100FF,stroke:#A100FF,color:#fff
     style VERSIONED fill:#4A90E2,stroke:#4A90E2,color:#fff
@@ -1085,6 +1085,16 @@ By the end of this session, you will have created:
 **Outcome:** Understanding industry standards + practical application through one example workflow
 
 <script type="module">
+// Convert Marp's code blocks to Mermaid-renderable elements
+document.querySelectorAll('code.language-mermaid').forEach(code => {
+  const pre = code.parentElement;
+  const div = document.createElement('div');
+  div.className = 'mermaid';
+  div.textContent = code.textContent;
+  pre.parentElement.replaceChild(div, pre);
+});
+
+// Initialize Mermaid
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 mermaid.initialize({ startOnLoad: true, theme: 'base' });
 </script>
