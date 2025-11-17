@@ -16,35 +16,78 @@ html: true
 
 ---
 
-## Session 1 Recap (5 min)
+## Welcome Back
 
-**What we built:**
-- knowledge-base.md (constants)
-- Understanding of 3-Question Framework
+**Where we are:**
 
-**Today's goal:**
-- specification.md (unique instance data)
-- implementation-plan.md (execution steps)
+```mermaid
+flowchart LR
+    S1[✅ SESSION 1<br/>knowledge-base.md] --> S2[📍 TODAY<br/>Complete the system]
+    S2 --> COMPLETE[🎯 Full Toolkit<br/>Ready for any domain]
 
-**Outcome**: Complete working prompt file system
+    style S1 fill:#7ED321,stroke:#7ED321,color:#fff
+    style S2 fill:#A100FF,stroke:#A100FF,color:#fff
+    style COMPLETE fill:#A100FF,stroke:#A100FF,color:#fff
+```
+
+**Today's mission**: Build specification.md + implementation-plan.md
+
+**Result**: Complete 3-file system you can use immediately
 
 ---
 
-## The Missing Pieces
+## Session 1 Recap: The 3-Question Framework
 
 ```mermaid
 flowchart TD
-    KB[knowledge-base.md<br/>✓ Built in Session 1] --> SPEC[specification.md<br/>➜ Today]
-    SPEC --> IMPL[implementation-plan.md<br/>➜ Today]
+    FRAMEWORK[🧠 3-Question Framework] --> Q1[Q1: What stays constant?<br/>→ knowledge-base.md]
+    FRAMEWORK --> Q2[Q2: What's unique?<br/>→ specification.md]
+    FRAMEWORK --> Q3[Q3: How to execute?<br/>→ implementation-plan.md]
 
-    KB --> |Provides context| SPEC
-    SPEC --> |Defines scope| IMPL
-    IMPL --> |References| KB
+    Q1 --> EX1[Example: 4 strategic categories,<br/>ABCD framework, 28 metrics]
+    Q2 --> EX2[Example: YOUR 4 priorities,<br/>YOUR metrics, YOUR timeline]
+    Q3 --> EX3[Example: Select categories → Choose metrics<br/>→ Document → Review]
 
-    style KB fill:#A100FF,stroke:#A100FF,color:#fff
-    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
-    style IMPL fill:#7ED321,stroke:#7ED321,color:#fff
+    style FRAMEWORK fill:#A100FF,stroke:#A100FF,color:#fff
+    style Q1 fill:#A100FF,stroke:#A100FF,color:#fff
+    style Q2 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style Q3 fill:#7ED321,stroke:#7ED321,color:#fff
+    style EX1 fill:#f0f0f0,stroke:#999
+    style EX2 fill:#f0f0f0,stroke:#999
+    style EX3 fill:#f0f0f0,stroke:#999
 ```
+
+**Last session**: You built knowledge-base.md (Question 1)
+
+**This session**: Questions 2 & 3
+
+---
+
+## The Complete Picture
+
+```mermaid
+flowchart TD
+    KB[📚 knowledge-base.md<br/>✅ Built in Session 1<br/><i>Domain constants & rules</i>] --> SPEC[📄 specification.md<br/>➜ Building Today<br/><i>This instance's details</i>]
+    SPEC --> IMPL[📋 implementation-plan.md<br/>➜ Building Today<br/><i>Step-by-step execution</i>]
+
+    KB -.->|Provides context| SPEC
+    SPEC -.->|Defines scope| IMPL
+    IMPL -.->|References| KB
+
+    COMPLETE[🎯 Complete System<br/>Ready to execute]
+    KB --> COMPLETE
+    SPEC --> COMPLETE
+    IMPL --> COMPLETE
+
+    style KB fill:#7ED321,stroke:#7ED321,color:#fff
+    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style IMPL fill:#FFB74D,stroke:#F57C00,color:#000
+    style COMPLETE fill:#A100FF,stroke:#A100FF,color:#fff
+```
+
+**Without specification.md**: You have knowledge, but no scope
+
+**Without implementation-plan.md**: You have goals, but no roadmap
 
 ---
 

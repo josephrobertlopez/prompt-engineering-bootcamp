@@ -16,11 +16,30 @@ html: true
 
 ---
 
+## Welcome
+
+**What we're building today:**
+
+A systematic approach to designing prompt file systems that works for ANY domain - not just copying templates.
+
+```mermaid
+flowchart LR
+    TRAD[❌ Traditional Approach<br/>Copy templates blindly] -.->|Breaks when<br/>domain changes| FAIL[⚠️ Brittle System]
+    FP[✨ First-Principles Approach<br/>Extract patterns systematically] -->|Works for<br/>any domain| SUCCESS[✅ Adaptable System]
+
+    style TRAD fill:#FFB74D,stroke:#F57C00,color:#000
+    style FAIL fill:#ef5350,stroke:#c62828,color:#fff
+    style FP fill:#A100FF,stroke:#A100FF,color:#fff
+    style SUCCESS fill:#7ED321,stroke:#7ED321,color:#fff
+```
+
+**No templates provided. You'll build everything from scratch.**
+
+---
+
 ## Today's Journey
 
 **Duration**: 90 minutes (with 2 micro-breaks)
-
-**Goal**: Build a complete prompt file system from raw materials
 
 ```mermaid
 flowchart LR
@@ -34,30 +53,61 @@ flowchart LR
     style D fill:#7ED321,stroke:#7ED321,color:#fff
 ```
 
+**Your deliverable**: Working knowledge-base.md built entirely by you
+
 ---
 
-## What You'll Learn
+## What You'll Master
 
 By the end of this session, you will:
 
-1. **Extract** structure from unstructured content
-2. **Apply** the 3-Question Framework to any domain
-3. **Build** knowledge-base.md from real requirements
-4. **Validate** your work through peer review
+```mermaid
+flowchart TD
+    START[📚 Session 1 Skills] --> SKILL1[1️⃣ Extract structure<br/>from unstructured content]
+    START --> SKILL2[2️⃣ Apply 3-Question Framework<br/>to any domain]
+    START --> SKILL3[3️⃣ Build knowledge-base.md<br/>from raw requirements]
+    START --> SKILL4[4️⃣ Validate work<br/>through peer review]
+
+    SKILL1 --> OUTCOME[🎯 Transferable Skill<br/>Works beyond workshop]
+    SKILL2 --> OUTCOME
+    SKILL3 --> OUTCOME
+    SKILL4 --> OUTCOME
+
+    style START fill:#A100FF,stroke:#A100FF,color:#fff
+    style SKILL1 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style SKILL2 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style SKILL3 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style SKILL4 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style OUTCOME fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 ---
 
 ## The Problem We're Solving
 
-Traditional prompt engineering:
-- Copy template files blindly
-- Miss critical domain context
-- Struggle when requirements change
+```mermaid
+flowchart TD
+    PROB[❓ The Challenge] --> TRAD1[Copy template files blindly]
+    PROB --> TRAD2[Miss critical domain context]
+    PROB --> TRAD3[Struggle when requirements change]
 
-**Our approach:**
-- Build from first principles
-- Understand *why* structure emerges
-- Adapt to any domain automatically
+    TRAD1 --> PAIN[😤 Frustration:<br/>Templates don't fit]
+    TRAD2 --> PAIN
+    TRAD3 --> PAIN
+
+    SOLUTION[✨ First-Principles Solution] --> FP1[Build from understanding]
+    SOLUTION --> FP2[Extract WHY structure emerges]
+    SOLUTION --> FP3[Adapt to any domain automatically]
+
+    FP1 --> WIN[🎉 Mastery:<br/>You design templates]
+    FP2 --> WIN
+    FP3 --> WIN
+
+    style PROB fill:#FFB74D,stroke:#F57C00,color:#000
+    style PAIN fill:#ef5350,stroke:#c62828,color:#fff
+    style SOLUTION fill:#A100FF,stroke:#A100FF,color:#fff
+    style WIN fill:#7ED321,stroke:#7ED321,color:#fff
+```
 
 ---
 
