@@ -157,43 +157,16 @@ Using categories from knowledge-base.md:
 
 ---
 
-## Industry Pattern: Configuration Management
-
-**What specification.md really is**: A configuration file
-
-```mermaid
-flowchart TD
-    PATTERN[🏗️ Configuration Pattern] --> KB_REF[Reference Schema<br/>Don't duplicate]
-    PATTERN --> INSTANCE[Provide Instance Values<br/>Environment-specific]
-    PATTERN --> VALIDATE[Enable Validation<br/>Against schema]
-
-    KB_REF --> EX1["❌ Don't: Copy metric definitions<br/>✅ Do: Reference knowledge-base.md § 3.2"]
-    INSTANCE --> EX2["❌ Don't: Generic placeholders<br/>✅ Do: 'Q1 FY26, Cloud Migration, NPS target 8.5'"]
-    VALIDATE --> EX3["❌ Don't: Invalid metric selection<br/>✅ Do: Metrics exist in knowledge-base"]
-
-    style PATTERN fill:#4A90E2,stroke:#4A90E2,color:#fff
-    style KB_REF fill:#A100FF,stroke:#A100FF,color:#fff
-    style INSTANCE fill:#4A90E2,stroke:#4A90E2,color:#fff
-    style VALIDATE fill:#7ED321,stroke:#7ED321,color:#fff
-    style EX1 fill:#f0f0f0,stroke:#999
-    style EX2 fill:#f0f0f0,stroke:#999
-    style EX3 fill:#f0f0f0,stroke:#999
-```
-
-**Industry equivalent**: `.env` files, `config.yaml`, dependency injection
-
----
-
 ## Specification Best Practices
 
-**Pattern #1: Reference, don't duplicate** (DRY principle)
+**Pattern #1: Link to knowledge-base**
 ```markdown
 Metrics selected from knowledge-base.md Section 3.2:
 - Client satisfaction (NPS)
 - Revenue growth (%)
 ```
 
-**Pattern #2: Add instance-specific context** (Configuration pattern)
+**Pattern #2: Add instance-specific context**
 ```markdown
 Timeline: Q1 FY26 (Oct 2025 - Dec 2025)
 Role context: Senior Consultant, Financial Services
@@ -234,39 +207,6 @@ flowchart TD
 
 ---
 
-## Industry Pattern: Contract-First Design
-
-**What implementation-plan.md really is**: An executable specification
-
-```mermaid
-flowchart LR
-    subgraph "Contract-First Approach"
-        CONTRACT[📋 Define Contract First<br/>Inputs, Outputs, Steps]
-        IMPL[⚙️ Implement Against Contract<br/>Follow specification]
-        VERIFY[✅ Verify Contract Met<br/>Validation criteria]
-    end
-
-    KB[knowledge-base.md<br/>Schema/Rules] -.->|Constraints| CONTRACT
-    SPEC[specification.md<br/>Instance Data] -.->|Parameters| CONTRACT
-
-    CONTRACT --> IMPL
-    IMPL --> VERIFY
-    VERIFY -->|Pass| SUCCESS[🎉 Deliverable Complete]
-    VERIFY -->|Fail| ROLLBACK[🔄 Rollback Plan]
-    ROLLBACK --> IMPL
-
-    style CONTRACT fill:#FFB74D,stroke:#F57C00,color:#000
-    style IMPL fill:#7ED321,stroke:#7ED321,color:#fff
-    style VERIFY fill:#4A90E2,stroke:#4A90E2,color:#fff
-    style KB fill:#A100FF,stroke:#A100FF,color:#fff
-    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
-    style SUCCESS fill:#7ED321,stroke:#7ED321,color:#fff
-```
-
-**Industry equivalents**: API contracts, test-driven development, acceptance criteria
-
----
-
 ## Implementation Structure
 
 **Recommended format:**
@@ -274,17 +214,17 @@ flowchart LR
 ```markdown
 # Implementation Plan
 
-## Prerequisites (Contract Inputs)
+## Prerequisites
 - Knowledge-base.md reviewed
 - Specification.md complete
 
-## Execution Steps (Executable Logic)
+## Execution Steps
 1. [Step with clear verb]
    - Input: [what you need]
    - Output: [what you produce]
    - Validation: [how to verify]
 
-## Rollback Plan (Error Handling)
+## Rollback Plan
 - If step X fails → [recovery action]
 ```
 
