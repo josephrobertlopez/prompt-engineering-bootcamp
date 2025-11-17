@@ -1083,3 +1083,8 @@ By the end of this session, you will have created:
 **Next Session:** Session 2 - Advanced Patterns & Complete Workflows
 **Repository:** https://github.com/josephrobertlopez/spring-migration-demo
 **Outcome:** Understanding industry standards + practical application through one example workflow
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true, theme: 'base' });
+</script>

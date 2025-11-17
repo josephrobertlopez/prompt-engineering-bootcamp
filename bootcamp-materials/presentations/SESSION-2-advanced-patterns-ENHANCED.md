@@ -1340,3 +1340,8 @@ By the end of this session, you will have:
 **Previous Session:** Session 1 - Industry Standards & Practical Application
 **Repository:** https://github.com/josephrobertlopez/spring-migration-demo
 **Outcome:** Complete understanding of advanced patterns + workflow orchestration + production mapping
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true, theme: 'base' });
+</script>
