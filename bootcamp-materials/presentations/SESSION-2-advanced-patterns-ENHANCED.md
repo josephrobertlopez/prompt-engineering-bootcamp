@@ -1,8 +1,21 @@
 # SESSION 2: ADVANCED PATTERNS & COMPLETE WORKFLOWS
 ## Orchestrating Multiple Prompt Patterns for Complex Tasks
 
+![Accenture Logo](assets/logos/accenture-logo.svg)
+
 **Duration:** 90 minutes
 **Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
+
+```mermaid
+flowchart LR
+    S1[✅ SESSION 1<br/>Basic Patterns] --> S2[📍 SESSION 2<br/>Advanced Orchestration]
+    S2 --> MASTERY[🎯 Mastery<br/>Complete Workflows]
+
+    style S1 fill:#7ED321,stroke:#7ED321,color:#fff
+    style S2 fill:#A100FF,stroke:#A100FF,color:#fff
+    style MASTERY fill:#A100FF,stroke:#A100FF,color:#fff
+```
+
 **Prerequisites:**
 - Completed Session 1 (understand industry standards, basic patterns)
 - spring-migration-demo repository cloned
@@ -50,43 +63,52 @@
 
 ### Slide 2: 5-File vs spec/ Folder Structure (5 min)
 
-**Session 1 Used: 5-File Numbered Pattern**
+```mermaid
+flowchart TD
+    subgraph SESSION1["📝 Session 1: 5-File Pattern"]
+        F0[file-0-constitution.md<br/>Reusable rules]
+        F1[file-1-specification.md<br/>File targets]
+        F2[file-2-planning.md<br/>Execution steps]
+        F3[file-3-abcd.md<br/>Decisions]
+        F4[file-4-implementation.md<br/>Synthesis]
+    end
 
+    subgraph SESSION2["📁 Session 2: spec/ Pattern"]
+        KB[spec/knowledge-base.md<br/>Domain knowledge + rules]
+        SPEC[spec/specification.md<br/>Requirements + decisions]
+        IMPL[spec/implementation-plan.md<br/>Execution phases]
+    end
+
+    F0 -.->|Maps to| KB
+    F1 -.->|Maps to| SPEC
+    F2 -.->|Maps to| IMPL
+    F3 -.->|Merges into| SPEC
+    F4 -.->|References| KB
+    F4 -.->|References| SPEC
+    F4 -.->|References| IMPL
+
+    INSIGHT[💡 Same Patterns<br/>Different Structure]
+    SESSION1 --> INSIGHT
+    SESSION2 --> INSIGHT
+
+    style F0 fill:#A100FF,stroke:#A100FF,color:#fff
+    style F1 fill:#A100FF,stroke:#A100FF,color:#fff
+    style F2 fill:#A100FF,stroke:#A100FF,color:#fff
+    style F3 fill:#FFB74D,stroke:#F57C00,color:#000
+    style F4 fill:#7ED321,stroke:#7ED321,color:#fff
+    style KB fill:#A100FF,stroke:#A100FF,color:#fff
+    style SPEC fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style IMPL fill:#7ED321,stroke:#7ED321,color:#fff
+    style INSIGHT fill:#A100FF,stroke:#A100FF,color:#fff
 ```
-prompts/
-├── file-0-constitution.md    → Reusable rules
-├── file-1-specification.md   → File-specific targets
-├── file-2-planning.md        → Execution steps
-├── file-3-abcd.md           → Decisions (alternatives)
-└── file-4-implementation.md  → Synthesis
-```
 
-**Session 2 Uses: spec/ Folder Semantic Pattern**
-
-```
-spec/
-├── knowledge-base.md       → Domain knowledge + reusable rules
-├── specification.md        → Requirements + design decisions
-└── implementation-plan.md  → Execution phases + approach
-```
-
-**Mapping (Same Content, Different Organization):**
-
-| 5-File Pattern (Session 1) | spec/ Folder (Session 2) | Content |
-|----------------------------|--------------------------|---------|
-| file-0-constitution.md | spec/knowledge-base.md | Architecture decisions, constraints |
-| file-1-specification.md | spec/specification.md | Requirements section |
-| file-2-planning.md | spec/implementation-plan.md | Implementation phases |
-| file-3-abcd.md | spec/specification.md | Design Decisions section |
-| file-4-implementation.md | Execution | References all spec/ files |
-
-**Key Insight:** Same patterns (ReAct, Tree of Thoughts), different structure. This demonstrates patterns are **structure-agnostic**—choose what fits your team.
+**Key Insight:** Same patterns (ReAct, Tree of Thoughts), different structure. Patterns are **structure-agnostic**—choose what fits your team.
 
 **Why Show Both?**
-- 5-file: Good for linear progression, explicit phases
-- spec/ folder: Industry-standard naming, semantic clarity
+- 5-file: Linear progression, explicit phases
+- spec/: Industry-standard naming, semantic clarity
 - ADRs: Even simpler (Session 1 alternative)
-- **All valid!** Today you'll see how ReAct/Tree of Thoughts work in spec/ folder format.
+- **All valid!** Today: ReAct/Tree of Thoughts in spec/ format
 
 **Reference:** See [spec-folder-guide.md](../references/spec-folder-guide.md) in references/ for complete workflow guide and templates.
 
@@ -103,16 +125,35 @@ spec/
 ### Slide 3a: ReAct + Tree of Thoughts Patterns (3 min)
 
 **Pattern 1: ReAct (Reason + Act)**
-- **Source:** Yao et al. (2022), widely adopted for AI agents
-- **Format:** Think → Act → Observe → Think → Act → Observe...
-- **Use case:** Multi-step tasks requiring validation at each stage
-- **Example:**
-  ```
-  Think: I need to update imports first before changing annotations
-  Act: Replace javax.validation.Valid with jakarta.validation.Valid
-  Observe: Code compiles? Yes. Proceed to next step.
-  Think: Now I can safely update annotations...
-  ```
+
+```mermaid
+flowchart TD
+    START[🎯 Task: Migrate Controller] --> THINK1[💭 Think:<br/>Update imports first]
+    THINK1 --> ACT1[⚡ Act:<br/>javax.* → jakarta.*]
+    ACT1 --> OBS1[👁️ Observe:<br/>Compiles? ✅ Yes]
+
+    OBS1 --> THINK2[💭 Think:<br/>Now update annotations]
+    THINK2 --> ACT2[⚡ Act:<br/>@RequestMapping → @GetMapping]
+    ACT2 --> OBS2[👁️ Observe:<br/>Tests pass? ✅ Yes]
+
+    OBS2 --> THINK3[💭 Think:<br/>Verify injection]
+    THINK3 --> ACT3[⚡ Act:<br/>Constructor injection check]
+    ACT3 --> OBS3[👁️ Observe:<br/>Complete ✅]
+
+    style START fill:#A100FF,stroke:#A100FF,color:#fff
+    style THINK1 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style THINK2 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style THINK3 fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style ACT1 fill:#FFB74D,stroke:#F57C00,color:#000
+    style ACT2 fill:#FFB74D,stroke:#F57C00,color:#000
+    style ACT3 fill:#FFB74D,stroke:#F57C00,color:#000
+    style OBS1 fill:#7ED321,stroke:#7ED321,color:#fff
+    style OBS2 fill:#7ED321,stroke:#7ED321,color:#fff
+    style OBS3 fill:#7ED321,stroke:#7ED321,color:#fff
+```
+
+**Source:** Yao et al. (2022), widely adopted for AI agents
+**Use case:** Multi-step tasks requiring validation at each stage
 
 **Pattern 2: Tree of Thoughts**
 - **Source:** Yao et al. (2023), for exploring alternatives

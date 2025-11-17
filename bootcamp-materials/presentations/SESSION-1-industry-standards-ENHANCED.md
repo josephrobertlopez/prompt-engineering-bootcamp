@@ -1,8 +1,21 @@
 # SESSION 1: PROMPT ENGINEERING INDUSTRY STANDARDS & PRACTICAL APPLICATION
 ## From Ad-Hoc AI Prompting to Structured, Reusable Workflows
 
+![Accenture Logo](assets/logos/accenture-logo.svg)
+
 **Duration:** 90 minutes
 **Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
+
+```mermaid
+flowchart LR
+    CONCEPTS[📚 Concepts<br/>30 min] --> DEMO[💻 Demo<br/>40 min]
+    DEMO --> REVIEW[💬 Review<br/>20 min]
+
+    style CONCEPTS fill:#A100FF,stroke:#A100FF,color:#fff
+    style DEMO fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style REVIEW fill:#7ED321,stroke:#7ED321,color:#fff
+```
+
 **Prerequisites:**
 - AI tool installed (GitHub Copilot, Claude, Cursor, or Windsurf)
 - spring-migration-demo repository cloned
@@ -202,40 +215,48 @@ See docs/adr/ for architecture decisions.
 
 ### Slide 4: Evolution of ADRs to Specs (6 min)
 
-**Option A: Architecture Decision Records (ADRs)** - Industry Standard
+```mermaid
+flowchart LR
+    subgraph OPTION_A["📋 Option A: ADRs (Industry Standard)"]
+        ADR_STRUCT[Structure:<br/>Status, Context, Decision, Consequences]
+        ADR_WHERE[Location:<br/>docs/adr/0001-*.md]
+        ADR_WHO[Used by:<br/>Microsoft, AWS, Netflix]
+    end
 
-```markdown
-# ADR 0001: Use Jakarta EE for Spring 3 Migration
+    subgraph OPTION_B["🔬 Option B: Structured Prompts (Experimental)"]
+        PROMPT_STRUCT[Structure:<br/>Rules, Transformations, Criteria]
+        PROMPT_WHERE[Location:<br/>prompts/ or spec/]
+        PROMPT_WHO[Used by:<br/>AI-first teams, experimental]
+    end
 
-## Status
-Accepted
+    CHOOSE{Your Choice}
+    ADR_STRUCT --> CHOOSE
+    PROMPT_STRUCT --> CHOOSE
 
-## Context
-Migrating from Spring Boot 2.7 to 3.2 requires changing from javax.* to jakarta.* namespace.
-This affects all controllers, services, and validation code.
+    CHOOSE -->|Proven, lightweight| PICK_A[✅ Choose ADRs]
+    CHOOSE -->|More detail, AI-focused| PICK_B[⚡ Choose Prompts]
+    CHOOSE -->|Best of both| PICK_C[💡 Use Both Together]
 
-## Decision
-We will systematically replace javax.* imports with jakarta.* equivalents across the codebase.
-
-## Consequences
-Positive: Compatible with Spring 3+, future-proof
-Negative: Breaking change, requires coordinated update
+    style CHOOSE fill:#A100FF,stroke:#A100FF,color:#fff
+    style PICK_A fill:#7ED321,stroke:#7ED321,color:#fff
+    style PICK_B fill:#4A90E2,stroke:#4A90E2,color:#fff
+    style PICK_C fill:#FFB74D,stroke:#F57C00,color:#000
 ```
 
-**Option B: Structured Prompt Files** - Experimental Pattern
+**Example ADR:**
+```markdown
+# ADR 0001: Use Jakarta EE for Spring 3 Migration
+Status: Accepted
+Context: Spring Boot 2.7 → 3.2 requires javax.* → jakarta.*
+Decision: Systematic import replacement
+Consequences: ✅ Compatible, future-proof | ❌ Breaking change
+```
 
+**Example Structured Prompt:**
 ```markdown
 # System Prompt: Spring Migration Rules
-
-Apply these transformation rules:
-- javax.servlet.* → jakarta.servlet.*
-- javax.validation.* → jakarta.validation.*
-- @RequestMapping(method=GET) → @GetMapping
-
-Success criteria:
-- Code compiles with Spring 3.2
-- All tests pass
-- No deprecated warnings
+Rules: javax.* → jakarta.*, @RequestMapping → @GetMapping
+Criteria: Compiles with Spring 3.2, tests pass, no warnings
 ```
 
 **Both Are Valid!**
