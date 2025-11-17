@@ -1,7 +1,31 @@
-<svg width="120" height="30" xmlns="http://www.w3.org/2000/svg">
-  <!-- Placeholder Accenture logo - Replace with official asset -->
-  <text x="10" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#A100FF">
-    accenture
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER LOGO - Replace with official Accenture brand asset -->
+<!-- Official logo available at: Accenture Brand Portal (internal access required) -->
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .accenture-text {
+        font-family: 'Graphik', 'Inter', 'Arial', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        fill: #A100FF;
+      }
+      .accenture-accent {
+        fill: #A100FF;
+      }
+    </style>
+  </defs>
+
+  <!-- Accenture wordmark -->
+  <text x="10" y="35" class="accenture-text">accenture</text>
+
+  <!-- Greater-than accent symbol (Accenture's signature element) -->
+  <g transform="translate(185, 15)">
+    <path class="accenture-accent" d="M 0 10 L 10 15 L 0 20 Z" />
+  </g>
+
+  <!-- Placeholder notice (remove in production) -->
+  <text x="10" y="48" style="font-family: Arial; font-size: 6px; fill: #999;">
+    PLACEHOLDER - Replace with official asset
   </text>
-  <path d="M 115 15 L 118 18 L 115 21" stroke="#A100FF" stroke-width="2" fill="none"/>
 </svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER LOGO - Replace with official Capital One brand asset -->
+<!-- Official logo available at: Capital One Brand Guidelines (internal access required) -->
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .capone-text {
+        font-family: 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        fill: #004879;
+      }
+      .capone-swoosh {
+        fill: #DA6A26;
+      }
+    </style>
+  </defs>
+
+  <!-- Capital One wordmark -->
+  <text x="45" y="30" class="capone-text">Capital One</text>
+
+  <!-- Swoosh accent (Capital One's signature element) -->
+  <g transform="translate(5, 15)">
+    <path class="capone-swoosh" d="M 0 10 Q 10 5, 20 10 Q 30 15, 20 20 Q 10 25, 0 20 Z" />
+  </g>
+
+  <!-- Placeholder notice (remove in production) -->
+  <text x="45" y="45" style="font-family: Arial; font-size: 6px; fill: #999;">
+    PLACEHOLDER - Replace with official asset
+  </text>
+</svg>
