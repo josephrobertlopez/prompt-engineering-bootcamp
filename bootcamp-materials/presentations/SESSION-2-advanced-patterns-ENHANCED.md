@@ -1,10 +1,25 @@
-# SESSION 2: ADVANCED PATTERNS & COMPLETE WORKFLOWS
-## Orchestrating Multiple Prompt Patterns for Complex Tasks
+---
+marp: true
+theme: accenture-theme
+paginate: true
+headingDivider: 2
+html: true
+---
+
+<!-- _class: hero -->
+
+# SESSION 2
+## Advanced Patterns & Complete Workflows
+
+**Orchestrating Multiple Prompt Patterns for Complex Tasks**
 
 ![Accenture Logo](assets/logos/accenture-logo.svg)
 
+---
+
+## Session Overview
+
 **Duration:** 90 minutes
-**Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
 
 ```mermaid
 flowchart LR
@@ -16,24 +31,33 @@ flowchart LR
     style MASTERY fill:#A100FF,stroke:#A100FF,color:#fff
 ```
 
-**Prerequisites:**
-- Completed Session 1 (understand industry standards, basic patterns)
-- spring-migration-demo repository cloned
-- AI tool (Copilot/Claude/Cursor/Windsurf) configured
-- Familiarity with system prompts and task specifications
+---
 
-**Learning Objectives:**
-- Learn advanced prompt patterns (ReAct, Tree of Thoughts, Meta-prompting)
-- Understand workflow orchestration strategies
-- Apply multi-step reasoning to complex tasks
-- Compare spec-kit vs basic prompts through hands-on experimentation
-- Build complete end-to-end example using multiple patterns
+## Prerequisites
+
+- ✅ Completed Session 1 (industry standards, basic patterns)
+- ✅ spring-migration-demo repository cloned
+- ✅ AI tool configured (Copilot/Claude/Cursor/Windsurf)
+- ✅ Familiarity with system prompts and task specifications
 
 ---
 
-## PART 1: LEARNING CONCEPTS (0-30 minutes)
+## Learning Objectives
 
-### Slide 1: Prompt Orchestration Overview (6 min)
+By the end of this session, you will:
+
+1. **Learn** advanced prompt patterns
+   - ReAct, Tree of Thoughts, Meta-prompting
+2. **Understand** workflow orchestration strategies
+   - Multi-pattern coordination
+3. **Apply** multi-step reasoning to complex tasks
+   - Real-world Spring Boot migration
+4. **Compare** spec-kit vs basic prompts
+   - Hands-on experimentation
+5. **Build** complete end-to-end examples
+   - Using multiple patterns together
+
+## Prompt Orchestration Overview
 
 **Session 1 Recap:**
 - ✓ Learned foundational patterns: Few-shot, Chain-of-Thought, Persona, Template
@@ -53,15 +77,15 @@ flowchart LR
 
 ---
 
-### 🔄 COGNITIVE BREAK (1 min)
+<!-- _class: break -->
 
-**Quick Check:** "Questions so far on today's goals?"
+## 🔄 Cognitive Break
 
-*This micro-break resets attention before diving into advanced patterns*
+**Quick Check:**
 
----
+*"Questions so far on today's goals?"*
 
-### Slide 2: 5-File vs spec/ Folder Structure (5 min)
+## 5-File vs spec/ Folder Structure
 
 ```mermaid
 flowchart TD
@@ -114,15 +138,15 @@ flowchart TD
 
 ---
 
-### 🔄 ACTIVE ENGAGEMENT (2 min)
+<!-- _class: break -->
 
-**Turn to your neighbor:** "Which tool do you plan to use today - Copilot, Claude, Cursor, or Windsurf?"
+## 🔄 Active Engagement
 
-*This active break increases retention through peer interaction*
+**Turn to your neighbor:**
 
----
+*"Which tool do you plan to use today - Copilot, Claude, Cursor, or Windsurf?"*
 
-### Slide 3a: ReAct + Tree of Thoughts Patterns (3 min)
+## ReAct + Tree of Thoughts Patterns
 
 **Pattern 1: ReAct (Reason + Act)**
 

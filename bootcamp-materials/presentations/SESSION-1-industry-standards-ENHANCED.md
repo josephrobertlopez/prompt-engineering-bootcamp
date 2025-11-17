@@ -1,10 +1,25 @@
-# SESSION 1: PROMPT ENGINEERING INDUSTRY STANDARDS & PRACTICAL APPLICATION
-## From Ad-Hoc AI Prompting to Structured, Reusable Workflows
+---
+marp: true
+theme: accenture-theme
+paginate: true
+headingDivider: 2
+html: true
+---
+
+<!-- _class: hero -->
+
+# SESSION 1
+## Prompt Engineering Industry Standards & Practical Application
+
+**From Ad-Hoc AI Prompting to Structured, Reusable Workflows**
 
 ![Accenture Logo](assets/logos/accenture-logo.svg)
 
+---
+
+## Session Overview
+
 **Duration:** 90 minutes
-**Format:** 30-min concepts + 40-min demo (20 freestyle + 10 show + 10 apply) + 20-min review
 
 ```mermaid
 flowchart LR
@@ -16,24 +31,33 @@ flowchart LR
     style REVIEW fill:#7ED321,stroke:#7ED321,color:#fff
 ```
 
-**Prerequisites:**
-- AI tool installed (GitHub Copilot, Claude, Cursor, or Windsurf)
-- spring-migration-demo repository cloned
-- Text editor or IDE
-- Basic understanding of Spring Boot
+---
 
-**Learning Objectives:**
-- Understand industry-standard prompt engineering patterns (Few-shot, Chain-of-Thought, Persona)
-- Learn configuration management standards (`.github/copilot-instructions.md`, `.windsurfrules`)
-- Explore decision documentation approaches (ADRs, structured prompts)
-- Compare freestyle vs templated approaches through hands-on experimentation
-- Recognize multiple valid approaches exist (ADRs, Spec-Kit, custom patterns)
+## Prerequisites
+
+- ✅ AI tool installed (GitHub Copilot, Claude, Cursor, or Windsurf)
+- ✅ spring-migration-demo repository cloned
+- ✅ Text editor or IDE
+- ✅ Basic understanding of Spring Boot
 
 ---
 
-## PART 1: LEARNING CONCEPTS (0-30 minutes)
+## Learning Objectives
 
-### Slide 1: The Problem - Ad-Hoc AI Prompting (7 min)
+By the end of this session, you will:
+
+1. **Understand** industry-standard prompt engineering patterns
+   - Few-shot, Chain-of-Thought, Persona, Template
+2. **Learn** configuration management standards
+   - `.github/copilot-instructions.md`, `.windsurfrules`
+3. **Explore** decision documentation approaches
+   - ADRs vs structured prompts
+4. **Compare** freestyle vs templated approaches
+   - Hands-on experimentation
+5. **Recognize** multiple valid approaches exist
+   - ADRs, Spec-Kit, custom patterns
+
+## The Problem: Ad-Hoc AI Prompting
 
 **Current State for Most Developers:**
 
@@ -75,15 +99,17 @@ flowchart TD
 
 ---
 
-### 🔄 ENGAGEMENT CHECK (1 min)
+<!-- _class: break -->
 
-**Show of hands:** "Who has used Architecture Decision Records (ADRs) before?"
+## 🔄 Engagement Check
 
-*This micro-break assesses baseline knowledge and resets attention*
+**Show of hands:**
 
----
+*"Who has used Architecture Decision Records (ADRs) before?"*
 
-### Slide 2a: Tier 1 Patterns (Few-shot, CoT, ADRs) (5 min)
+## Tier 1: Proven Patterns
+
+**10+ years, production-ready**
 
 **Tier 1: Proven Patterns (10+ years, production-ready)**
 
@@ -115,9 +141,7 @@ flowchart TD
 - ADRs: Document the WHY, not just the WHAT
 - RFC: Async collaboration, builds consensus
 
----
-
-### Slide 2b: Tier 2 & 3 (copilot-instructions, Spec-Kit) (4 min)
+## Tier 2 & 3: Emerging Standards
 
 ```mermaid
 flowchart TD
@@ -211,9 +235,7 @@ See docs/adr/ for architecture decisions.
 - ✅ Consistent AI behavior across developers
 - ✅ Reusable across projects
 
----
-
-### Slide 4: Evolution of ADRs to Specs (6 min)
+## Evolution: ADRs to Structured Prompts
 
 ```mermaid
 flowchart LR
